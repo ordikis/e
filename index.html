@@ -1,1 +1,430 @@
-test
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORDIKIS – Privat kinky erotisk litteraturklub</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink-pale: #fce8e8;
+    --pink-mid: #f4c0c0;
+    --pink-deep: #e8919a;
+    --pink-accent: #c45e6a;
+    --ink: #2a1a1d;
+    --ink-soft: #5a3a3e;
+    --cream: #fdf5f5;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background-color: var(--pink-pale);
+    color: var(--ink);
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 16px;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  /* Subtle background texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: 
+      radial-gradient(ellipse at 20% 10%, rgba(232,145,154,0.18) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 90%, rgba(244,192,192,0.22) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .page {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 60px 40px 80px;
+  }
+
+  /* Header */
+  header {
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--pink-deep);
+    margin-bottom: 60px;
+    animation: fadeUp 1s ease both;
+  }
+
+  .wordmark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(64px, 14vw, 110px);
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    color: var(--pink-accent);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--ink-soft);
+    letter-spacing: 0.06em;
+  }
+
+  .sub-tagline {
+    font-size: 0.85rem;
+    color: var(--pink-accent);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 18px;
+  }
+
+  /* Decorative rule */
+  .rule {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 40px 0;
+  }
+  .rule::before, .rule::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--pink-deep);
+  }
+  .rule-diamond {
+    width: 6px; height: 6px;
+    background: var(--pink-accent);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+
+  /* Sections */
+  section {
+    margin-bottom: 56px;
+    animation: fadeUp 1s ease both;
+  }
+
+  section:nth-child(2) { animation-delay: 0.1s; }
+  section:nth-child(3) { animation-delay: 0.2s; }
+  section:nth-child(4) { animation-delay: 0.3s; }
+  section:nth-child(5) { animation-delay: 0.4s; }
+  section:nth-child(6) { animation-delay: 0.5s; }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.65rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    color: var(--pink-accent);
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  p {
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+    font-size: 0.96rem;
+  }
+
+  /* Ambitions */
+  .ambitions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 8px;
+  }
+
+  .ambition {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: rgba(255,255,255,0.45);
+    border: 1px solid var(--pink-mid);
+    padding: 18px 22px;
+    border-radius: 2px;
+  }
+
+  .ambition-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--pink-deep);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 32px;
+  }
+
+  .ambition-text {
+    font-style: italic;
+    color: var(--ink);
+    font-size: 0.97rem;
+    padding-top: 4px;
+  }
+
+  /* Purpose list */
+  .purpose-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .purpose-list li {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    padding: 10px 0 10px 24px;
+    border-bottom: 1px solid rgba(232,145,154,0.25);
+    position: relative;
+  }
+
+  .purpose-list li::before {
+    content: '◇';
+    position: absolute;
+    left: 0;
+    color: var(--pink-accent);
+    font-size: 0.7rem;
+    top: 12px;
+  }
+
+  .purpose-list li:last-child {
+    border-bottom: none;
+  }
+
+  /* Membership box */
+  .membership-box {
+    background: rgba(255,255,255,0.5);
+    border: 1px solid var(--pink-deep);
+    padding: 28px 32px;
+    text-align: center;
+    position: relative;
+  }
+
+  .price-big {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--pink-accent);
+    line-height: 1;
+  }
+
+  .price-label {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-top: 4px;
+  }
+
+  .entree {
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+  }
+
+  .contact-link {
+    display: inline-block;
+    margin-top: 18px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--pink-accent);
+    border-bottom: 1px solid var(--pink-deep);
+    padding-bottom: 2px;
+  }
+
+  /* FAQ */
+  .faq-item {
+    margin-bottom: 22px;
+  }
+
+  .faq-q {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  .faq-a {
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    margin-bottom: 0;
+  }
+
+  /* Closing */
+  .closing {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid var(--pink-deep);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+
+  .closing em {
+    color: var(--pink-accent);
+    font-style: normal;
+  }
+
+  /* Two col */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .info-card {
+    background: rgba(255,255,255,0.42);
+    border: 1px solid var(--pink-mid);
+    padding: 18px 20px;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  .info-card strong {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--pink-accent);
+    margin-bottom: 6px;
+    font-weight: 400;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 600px) {
+    .page { padding: 40px 24px 60px; }
+    .two-col { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="wordmark">ORDIKIS</div>
+    <div class="tagline">Privat kinky erotisk litteraturklub</div>
+    <div class="sub-tagline">Nyd erotiske ord</div>
+  </header>
+
+  <section>
+    <p>Vi er en blandet gruppe mennesker, som undersøger og nyder det skrevne ord, oplæsninger og arbejdet med erotiske tekster. Et fristed med erotik, humor og rummelighed – LGBT+-inkluderende, kropspositive og uden racisme eller ageism.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section>
+    <h2>Formålet med ORDIKIS</h2>
+    <ul class="purpose-list">
+      <li>At mødes ca. 10 gange pr. år og lytte til eller oplæse afsnit af erotisk litteratur på dansk eller engelsk.</li>
+      <li>At alle får mulighed for at læse op — eller at pirre lyttesansen.</li>
+      <li>At øve oplæsning og have de frække ord i sin mund.</li>
+      <li>At nyde ordene gennem personlig højtlæsning.</li>
+      <li>At få inspiration til nye genrer, forfattere og oplysning om seksualitet, livsførelse og forførelse.</li>
+      <li>At forbedre egne tekster og øve dirty talk.</li>
+      <li>At alle — efter evne — bidrager til en god, sjov, positiv dramatisk og varm stemning.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Ekstra tema</h2>
+    <p>Der kan være temaaftener med fx udklædning, blindfolds, kinks og sanseoplevelser som dufte, mad, drinks, tegning, fotos eller lyde. Jo flere sanser, jo bedre.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section>
+    <h2>Vision</h2>
+    <div class="ambitions">
+      <div class="ambition">
+        <div class="ambition-num">1</div>
+        <div class="ambition-text">Vi vil vække lysten til det frække ord og det sanselige sprog.</div>
+      </div>
+      <div class="ambition">
+        <div class="ambition-num">2</div>
+        <div class="ambition-text">Vi vil skabe trygge rammer for erotisk leg med litteraturen.</div>
+      </div>
+      <div class="ambition">
+        <div class="ambition-num">3</div>
+        <div class="ambition-text">Vi vil inspirere flere til at turde skrive og nyde erotisk litteratur.</div>
+      </div>
+      <div class="ambition">
+        <div class="ambition-num">4</div>
+        <div class="ambition-text">Vi vil at du kan udvikle dig seksuelt og blive bevidst om grænser, lyster og dit ja, nej eller <em style="color:var(--pink-accent)">"måske senere"</em>.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section>
+    <h2>Medlemskab</h2>
+    <div class="membership-box">
+      <div class="price-big">50 kr.</div>
+      <div class="price-label">Årligt medlemskab — 2026</div>
+      <div class="entree">Entré pr. aften: 60 kr. (til rengøring og praktiske udgifter)</div>
+      <div class="contact-link">Vi har venteliste — skriv til: <a href="mailto:Ordikis@proton.me" style="color:var(--pink-accent); text-decoration:none;">Ordikis@proton.me</a><br><span style="font-size:0.85rem; font-style:normal; letter-spacing:0; font-family:'Libre Baskerville',serif; color:var(--ink-soft);">— oplys gerne din motivation for at deltage og din erfaring med sexpositive arrangementer</span></div>
+    </div>
+    <p style="margin-top:18px; font-size:0.88rem;">Det er et fortroligt og intimt rum. Deltagelse kræver, at du accepterer visionen og reglerne og skriver under på, at du har læst og forstået dem — herefter modtager du dit medlemskort. Man skal være over 21 år og tale engelsk eller dansk. Rigtigt navn skal oplyses, men ikke nødvendigvis bruges.</p>
+    <p style="font-size:0.88rem;">Medlemskab ophører, hvis forpersonen skønner, at rammerne ikke overholdes og advarsler ikke tages seriøst.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section>
+    <h2>Rammerne</h2>
+    <div class="two-col">
+      <div class="info-card">
+        <strong>Påklædning</strong>
+        Det er tilladt og opmuntret at klæde sig vovet, frækt, kinky eller normativt. 100% nøgenhed er ikke tilladt.
+      </div>
+      <div class="info-card">
+        <strong>Ikke en sexklub</strong>
+        Det er et erotik-arrangement og ikke et "sex-arrangement". Ikke en swingerklub eller BDSM-klub — heller ingen skjult vibrator 😉
+      </div>
+      <div class="info-card">
+        <strong>Mobiler & foto</strong>
+        Fotografering er ikke tilladt. Mobiler afleveres i en lukket beholder indtil afslutningen.
+      </div>
+      <div class="info-card">
+        <strong>Smag & kinks</strong>
+        Træk dig, hvis noget er for voldsomt — vi har høretelefoner. Overlagte provokationer og overdrevne dufte er ikke velkomne.
+      </div>
+    </div>
+    <p style="margin-top:16px; font-size:0.88rem;">Klager over andre medlemmer sendes til <a href="mailto:Ordikis@proton.me" style="color:var(--pink-accent);">Ordikis@proton.me</a> eller forpersonen.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section>
+    <h2>Hvem står bag?</h2>
+    <p>Vi er en gruppe på ca. 5 personer af forskellig baggrund og uddannelse. Bibliotekar <em style="color:var(--pink-accent)">Nikolaj Petersen</em> vælger tekster lige pt. og er vært på en del af programmet.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section>
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <div class="faq-q">Tilbyder I foredrag?</div>
+      <p class="faq-a">Både og. Ønsker du et foredrag om erotisk litteratur til Højskolen, firmaet, festen eller polterabend — skriv til os, vi sender dig flere informationer.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Er der rabatter for studerende eller andre?</div>
+      <p class="faq-a">Nej — der gives ikke separate rabatter.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Må man bruge mikrofon, mobiltelefon eller kamera til oplæsninger?</div>
+      <p class="faq-a">Nej. Mobiltelefoner og andre kameraaktiverede elektroniske enheder er forbudt og opbevares hos værten.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Hvad er reglerne for mad og drikke?</div>
+      <p class="faq-a">Med undtagelse af vand i plastflaske er det ikke tilladt at medbringe egen mad eller drikke.</
