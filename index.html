@@ -4,29 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ORDIKIS – Privat erotisk litteraturklub i København / Valby</title>
+<title>🍒 ORDIKIS – Privat erotisk litteraturklub i København / Valby</title>
 <meta name="description" content="ORDIKIS er en privat, kinky erotisk litteraturklub i København tæt på Danshøj st., Valby. Vi mødes ca. 5–7 gange om året for oplæsning, dirty talk og sanselige oplevelser. LGBT+-inkluderende og kropspositive.">
-<meta name="keywords" content="erotisk litteratur, litteraturklub, erotik København, erotik Valby, sexpositivt, oplæsning, kinky, LGBT, erotisk oplæsning, ORDIKIS, litteratur klub, sexpositive community, erotik klub Danmark, erotik klub København">
+<meta name="keywords" content="erotisk litteratur, litteraturklub, erotik København, erotic literature club Copenhagen, club littérature érotique Copenhague, erotischer Literaturclub Kopenhagen">
 
 <meta name="robots" content="index, follow">
 <meta name="author" content="ORDIKIS">
 <meta name="geo.region" content="DK-84">
 <meta name="geo.placename" content="København, Valby">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍒</text></svg>">
 <link rel="canonical" href="https://ordikis.dk/">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="ORDIKIS – Privat erotisk litteraturklub · København">
-<meta property="og:description" content="Et fortroligt, sexpositivt rum for erotisk litteratur, oplæsninger og sanselighed. LGBT+-inkluderende. Tæt på Danshøj st., København / Valby.">
-<meta property="og:url" content="https://ordikis.dk/">
-<meta property="og:locale" content="da_DK">
-
-<!-- hreflang for later multilingual support -->
 <link rel="alternate" hreflang="da" href="https://ordikis.dk/">
 <link rel="alternate" hreflang="en" href="https://ordikis.dk/?lang=en">
 <link rel="alternate" hreflang="fr" href="https://ordikis.dk/?lang=fr">
 <link rel="alternate" hreflang="es" href="https://ordikis.dk/?lang=es">
 <link rel="alternate" hreflang="de" href="https://ordikis.dk/?lang=de">
+<link rel="alternate" hreflang="sv" href="https://ordikis.dk/?lang=sv">
+<link rel="alternate" hreflang="no" href="https://ordikis.dk/?lang=no">
+<link rel="alternate" hreflang="is" href="https://ordikis.dk/?lang=is">
 <link rel="alternate" hreflang="x-default" href="https://ordikis.dk/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="🍒 ORDIKIS – Privat erotisk litteraturklub · København">
+<meta property="og:description" content="Et fortroligt, sexpositivt rum for erotisk litteratur, oplæsninger og sanselighed. LGBT+-inkluderende. Tæt på Danshøj st., København / Valby.">
+<meta property="og:url" content="https://ordikis.dk/">
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
 <style>
@@ -61,15 +62,14 @@
     z-index: 0;
   }
 
-  /* Language bar — ready for future languages */
   .lang-bar {
     position: sticky;
     top: 0;
     z-index: 100;
     display: flex;
-    justify-content: flex-end;
-    padding: 10px 40px;
-    background: rgba(252,232,232,0.92);
+    justify-content: center;
+    padding: 10px 20px;
+    background: rgba(252,232,232,0.95);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--pink-mid);
   }
@@ -82,30 +82,27 @@
     border-radius: 30px;
     padding: 4px;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .lang-btn {
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 5px 13px;
+    gap: 5px;
+    padding: 5px 11px;
     border-radius: 24px;
     border: none;
     background: transparent;
     cursor: pointer;
     font-family: 'Libre Baskerville', serif;
-    font-size: 0.78rem;
+    font-size: 0.74rem;
     color: var(--ink-soft);
     transition: background 0.2s, color 0.2s;
     letter-spacing: 0.03em;
     white-space: nowrap;
   }
 
-  .lang-btn.active {
-    background: var(--pink-accent);
-    color: white;
-  }
-
+  .lang-btn.active { background: var(--pink-accent); color: white; }
   .lang-btn:hover:not(.active) { background: var(--pink-mid); }
   .flag { font-size: 1rem; line-height: 1; }
 
@@ -155,7 +152,6 @@
     margin-top: 18px;
   }
 
-  /* Nav menu */
   nav {
     display: flex;
     flex-wrap: wrap;
@@ -262,7 +258,6 @@
 
   .purpose-list li:last-child { border-bottom: none; }
 
-  /* Evening timeline */
   .timeline { display: flex; flex-direction: column; gap: 0; margin-top: 8px; position: relative; }
 
   .timeline::before {
@@ -349,6 +344,25 @@
     line-height: 2;
   }
 
+  .newsletter-box {
+    background: rgba(255,255,255,0.45);
+    border: 1px solid var(--pink-mid);
+    border-left: 3px solid var(--pink-accent);
+    padding: 20px 24px;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+  }
+
+  .newsletter-box strong {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--pink-accent);
+    margin-bottom: 6px;
+    font-weight: 400;
+  }
+
   .faq-item { margin-bottom: 22px; }
 
   .faq-q {
@@ -412,25 +426,6 @@
 
   .wh-text { font-size: 0.9rem; color: var(--ink-soft); line-height: 1.7; }
 
-  .newsletter-box {
-    background: rgba(255,255,255,0.45);
-    border: 1px solid var(--pink-mid);
-    border-left: 3px solid var(--pink-accent);
-    padding: 20px 24px;
-    font-size: 0.92rem;
-    color: var(--ink-soft);
-  }
-
-  .newsletter-box strong {
-    display: block;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.05rem;
-    font-style: italic;
-    color: var(--pink-accent);
-    margin-bottom: 6px;
-    font-weight: 400;
-  }
-
   a { color: var(--pink-accent); }
 
   @keyframes fadeUp {
@@ -441,46 +436,26 @@
   @media (max-width: 640px) {
     .page { padding: 40px 20px 60px; }
     .two-col, .wh-grid { grid-template-columns: 1fr; }
-    .lang-bar { padding: 8px 16px; }
-    .lang-btn { padding: 5px 9px; font-size: 0.72rem; }
+    .lang-bar { padding: 8px 10px; }
+    .lang-btn { padding: 4px 8px; font-size: 0.68rem; }
   }
 </style>
 </head>
 <body>
 
-<!-- ── LANGUAGE BAR ── -->
 <div class="lang-bar">
   <div class="lang-toggle">
-    <button class="lang-btn active" id="btn-da" onclick="setLang('da')"><span class="flag">🇩🇰</span> Dansk</button>
-    <button class="lang-btn" id="btn-en" onclick="setLang('en')" title="English — kommer snart"><span class="flag">🇬🇧</span> English</button>
-    <button class="lang-btn" id="btn-fr" onclick="setLang('fr')" title="Français — coming soon"><span class="flag">🇫🇷</span> Français</button>
-    <button class="lang-btn" id="btn-es" onclick="setLang('es')" title="Español — próximamente"><span class="flag">🇪🇸</span> Español</button>
-    <button class="lang-btn" id="btn-de" onclick="setLang('de')" title="Deutsch — demnächst"><span class="flag">🇩🇪</span> Deutsch</button>
+    <button class="lang-btn active" id="btn-da" onclick="setLang('da')"><span class="flag">🇩🇰</span> Dansk</button><button class="lang-btn" id="btn-en" onclick="setLang('en')"><span class="flag">🇬🇧</span> English</button><button class="lang-btn" id="btn-fr" onclick="setLang('fr')"><span class="flag">🇫🇷</span> Français</button><button class="lang-btn" id="btn-es" onclick="setLang('es')"><span class="flag">🇪🇸</span> Español</button><button class="lang-btn" id="btn-de" onclick="setLang('de')"><span class="flag">🇩🇪</span> Deutsch</button><button class="lang-btn" id="btn-sv" onclick="setLang('sv')"><span class="flag">🇸🇪</span> Svenska</button><button class="lang-btn" id="btn-no" onclick="setLang('no')"><span class="flag">🇳🇴</span> Norsk</button><button class="lang-btn" id="btn-is" onclick="setLang('is')"><span class="flag">🇮🇸</span> Íslenska</button>
   </div>
 </div>
 
-
-<!-- ════════════════════════════════════════
-     🇩🇰 DANSK
-════════════════════════════════════════ -->
-<div id="lang-da" class="lang-section visible">
+<div id="lang-da" class="lang-section">
 <div class="page">
-
   <header>
     <div class="wordmark">ORDIKIS</div>
     <div class="tagline">Privat kinky erotisk litteraturklub</div>
     <div class="sub-tagline">Nyd erotiske ord</div>
-
-    <nav>
-      <a href="#om">Om os</a>
-      <a href="#formaal">Formål</a>
-      <a href="#vision">Vision</a>
-      <a href="#typisk-aften">En typisk aften</a>
-      <a href="#praktisk">Hvem &amp; hvor</a>
-      <a href="#medlemskab">Medlemskab</a>
-      <a href="#rammer">Rammerne</a>
-      <a href="#faq">FAQ</a>
-    </nav>
+    <nav><a href="#om">Om os</a><a href="#formaal">Formål</a><a href="#vision">Vision</a><a href="#typisk-aften">En typisk aften</a><a href="#praktisk">Hvem &amp; hvor</a><a href="#medlemskab">Medlemskab</a><a href="#rammer">Rammerne</a><a href="#faq">FAQ</a></nav>
   </header>
 
   <section id="om">
@@ -491,15 +466,7 @@
 
   <section id="formaal">
     <h2>Formålet med ORDIKIS</h2>
-    <ul class="purpose-list">
-      <li>At mødes ca. 5–7 gange pr. år og lytte til eller oplæse afsnit af erotisk litteratur på dansk eller engelsk.</li>
-      <li>At alle får mulighed for at læse op — eller at pirre lyttesansen.</li>
-      <li>At øve oplæsning og have de frække ord i sin mund.</li>
-      <li>At nyde ordene gennem personlig højtlæsning.</li>
-      <li>At få inspiration til nye genrer, forfattere og oplysning om seksualitet, livsførelse og forførelse.</li>
-      <li>At forbedre egne tekster og øve dirty talk.</li>
-      <li>At alle — efter evne — bidrager til en god, sjov, positiv dramatisk og varm stemning.</li>
-    </ul>
+    <ul class="purpose-list"><li>At mødes ca. 5–7 gange pr. år og lytte til eller oplæse afsnit af erotisk litteratur på dansk eller engelsk.</li><li>At alle får mulighed for at læse op — eller at pirre lyttesansen.</li><li>At øve oplæsning og have de frække ord i sin mund.</li><li>At nyde ordene gennem personlig højtlæsning.</li><li>At få inspiration til nye genrer, forfattere og oplysning om seksualitet, livsførelse og forførelse.</li><li>At forbedre egne tekster og øve dirty talk.</li><li>At alle — efter evne — bidrager til en god, sjov, legende og varm stemning.</li><li>Alle medlemmer er deltagere — der er ingen tilskuere.</li></ul>
   </section>
 
   <section>
@@ -512,12 +479,7 @@
 
   <section id="vision">
     <h2>Vision</h2>
-    <div class="ambitions">
-      <div class="ambition"><div class="ambition-num">1</div><div class="ambition-text">Vi vil vække lysten til det frække ord og det sanselige sprog.</div></div>
-      <div class="ambition"><div class="ambition-num">2</div><div class="ambition-text">Vi vil skabe trygge rammer for erotisk leg med litteraturen.</div></div>
-      <div class="ambition"><div class="ambition-num">3</div><div class="ambition-text">Vi vil inspirere flere til at turde skrive og nyde erotisk litteratur.</div></div>
-      <div class="ambition"><div class="ambition-num">4</div><div class="ambition-text">Vi vil at du kan udvikle dig seksuelt og blive bevidst om grænser, lyster og dit ja, nej eller <em style="color:var(--pink-accent)">"måske senere"</em>.</div></div>
-    </div>
+    <div class="ambitions"><div class="ambition"><div class="ambition-num">1</div><div class="ambition-text">Vi vil vække lysten til det frække ord og det sanselige sprog.</div></div><div class="ambition"><div class="ambition-num">2</div><div class="ambition-text">Vi vil skabe trygge rammer for erotisk leg med litteraturen.</div></div><div class="ambition"><div class="ambition-num">3</div><div class="ambition-text">Vi vil inspirere flere til at turde skrive og nyde erotisk litteratur.</div></div><div class="ambition"><div class="ambition-num">4</div><div class="ambition-text">Vi vil at du kan udvikle dig seksuelt og blive bevidst om grænser, lyster og dit ja, nej eller <em style="color:var(--pink-accent)">"måske senere"</em>.</div></div></div>
   </section>
 
   <div class="rule"><div class="rule-diamond"></div></div>
@@ -525,7 +487,6 @@
   <section id="typisk-aften">
     <h2>Hvordan ser en typisk aften ud?</h2>
     <div class="timeline">
-
       <div class="tl-item">
         <div class="tl-dot">☕</div>
         <div class="tl-content">
@@ -533,7 +494,6 @@
           <div class="tl-text">Vi mødes, får en kop te, en øl eller noget andet godt — og finder til rette og snakker med hinanden. Folk har tit gjort lidt ud af deres forklædning; nogle er vovede, andre festligt klædt for at løfte stemningen.</div>
         </div>
       </div>
-
       <div class="tl-item">
         <div class="tl-dot">📖</div>
         <div class="tl-content">
@@ -541,7 +501,6 @@
           <div class="tl-text">Et eller flere af medlemmerne læser op — enten fra en egen tekst eller noget, de synes er godt og har lyst til at dele. Sproget lever og fylder rummet.</div>
         </div>
       </div>
-
       <div class="tl-item">
         <div class="tl-dot">🌿</div>
         <div class="tl-content">
@@ -549,7 +508,6 @@
           <div class="tl-text">Stræk benene, hent en drik, træk vejret.</div>
         </div>
       </div>
-
       <div class="tl-item">
         <div class="tl-dot">📖</div>
         <div class="tl-content">
@@ -557,7 +515,6 @@
           <div class="tl-text">Endnu en oplæsning — måske en lang. Der kan også komme kortere bidrag — digte som er sjove, alvorlige, kinky eller bare totalt frække og pirrende.</div>
         </div>
       </div>
-
       <div class="tl-item">
         <div class="tl-dot">💬</div>
         <div class="tl-content">
@@ -565,7 +522,6 @@
           <div class="tl-text">Vi snakker med hinanden — man kan høre om hvad folk går og laver, dele tanker om det læste og nyde selskabet.</div>
         </div>
       </div>
-
       <div class="tl-item">
         <div class="tl-dot">✨</div>
         <div class="tl-content">
@@ -573,7 +529,6 @@
           <div class="tl-text">To-tre oplæsninger til. Aftenens stemning er nu godt sat, og ordene har fundet vej ind under huden.</div>
         </div>
       </div>
-
       <div class="tl-item">
         <div class="tl-dot">🥂</div>
         <div class="tl-content">
@@ -581,7 +536,13 @@
           <div class="tl-text">Meddelelser og praktisk info. Vi slutter af med god stemning. Nogen skal hjem — men andre bliver 20–30 minutter ekstra og nyder det sidste selskab.</div>
         </div>
       </div>
-
+      <div class="tl-item">
+        <div class="tl-dot">💌</div>
+        <div class="tl-content">
+          <div class="tl-time">Note: Feedback</div>
+          <div class="tl-text">Ønsker man feedback på tekster eller selve oplæsningen, er det muligt via e-mail efter arrangementet. Vær venlig og positiv — og gerne ærlig.</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -589,14 +550,7 @@
 
   <section id="praktisk">
     <h2>Hvem, hvordan, hvad &amp; hvor</h2>
-    <div class="wh-grid">
-      <div class="wh-item"><div class="wh-label">Hvem kommer?</div><div class="wh-text">Dem som har interesse og tror, at de vil føle sig godt tilpas — og læse noget.</div></div>
-      <div class="wh-item"><div class="wh-label">Hvordan deltager jeg?</div><div class="wh-text">Du kommer i tøj som du føler dig selvsikker eller fræk i.</div></div>
-      <div class="wh-item"><div class="wh-label">Hvad kan jeg forvente?</div><div class="wh-text">Vi starter kl. 19:00. På de 1,5 til 2,5 timer vi ses, er der oplæsning og tid til at snakke sammen og nyde en snack og/eller en øl, vin eller bobler. Du er med til at skabe nysgerrighed og forme aftenen.</div></div>
-      <div class="wh-item"><div class="wh-label">Hvor er det?</div><div class="wh-text">Vi ses tæt på Danshøj st. — ca. 10 minutters gang derfra, København / Valby. Adressen oplyses ved medlemskab.</div></div>
-      <div class="wh-item"><div class="wh-label">Hvor tit ses man?</div><div class="wh-text">Ca. 5–7 gange på et år — eller mere, hvis interessen er der.</div></div>
-      <div class="wh-item"><div class="wh-label">Spørgsmål?</div><div class="wh-text">Skriv til os på Ordikis@proton.me — vi svarer gerne.</div></div>
-    </div>
+    <div class="wh-grid"><div class="wh-item"><div class="wh-label">Hvem kommer?</div><div class="wh-text">Dem som har interesse og tror, at de vil føle sig godt tilpas — og læse noget.</div></div><div class="wh-item"><div class="wh-label">Hvordan deltager jeg?</div><div class="wh-text">Du kommer i tøj som du føler dig selvsikker eller fræk i.</div></div><div class="wh-item"><div class="wh-label">Hvad kan jeg forvente?</div><div class="wh-text">Vi starter kl. 19:00. På de 1,5 til 2,5 timer vi ses, er der oplæsning og tid til at snakke sammen og nyde en snack og/eller en øl, vin eller bobler. Du er med til at skabe nysgerrighed og forme aftenen.</div></div><div class="wh-item"><div class="wh-label">Hvor er det?</div><div class="wh-text">Vi ses tæt på Danshøj st. — ca. 10 minutters gang derfra, København / Valby. Adressen oplyses ved medlemskab.</div></div><div class="wh-item"><div class="wh-label">Hvor tit ses man og hvor mange?</div><div class="wh-text">Ca. 5–7 gange på et år — eller mere, hvis interessen er der. Vi er minimum 6 og maksimalt 14 deltagere pr. aften. Der er ca. 30 medlemmer i gruppen, så først til mølle gælder for de enkelte arrangementer.</div></div><div class="wh-item"><div class="wh-label">Spørgsmål?</div><div class="wh-text">Skriv til os på <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — vi svarer gerne.</div></div></div>
   </section>
 
   <div class="rule"><div class="rule-diamond"></div></div>
@@ -606,17 +560,16 @@
     <div class="membership-box">
       <div class="price-big">50 kr.</div>
       <div class="price-label">Årligt medlemskab — 2026</div>
-      <div class="entree">Entré pr. aften: 85 kr. (til rengøring og praktiske udgifter)</div>
+      <div class="entree">Entré pr. aften: 85 kr.</div>
       <div class="contact-link">Vi har venteliste — skriv til: <a href="mailto:Ordikis@proton.me" style="text-decoration:none;">Ordikis@proton.me</a><br>
         <span style="font-size:0.82rem;font-style:normal;font-family:'Libre Baskerville',serif;color:var(--ink-soft);letter-spacing:0;">— oplys gerne din motivation for at deltage og din erfaring med sexpositive arrangementer</span>
       </div>
     </div>
     <p style="margin-top:18px;font-size:0.88rem;">Det er et fortroligt og intimt rum. Deltagelse kræver, at du accepterer visionen og reglerne og skriver under på, at du har læst og forstået dem — herefter modtager du dit medlemskort. Man skal være over 21 år og tale engelsk eller dansk. Rigtigt navn skal oplyses, men ikke nødvendigvis bruges.</p>
     <p style="font-size:0.88rem;">Medlemskab ophører, hvis forpersonen skønner, at rammerne ikke overholdes og advarsler ikke tages seriøst.</p>
-
     <div class="newsletter-box" style="margin-top:20px;">
       <strong>📬 Nyhedsbrev</strong>
-      Alle medlemmer og nysgerrige kan modtage vores nyhedsbrev. Skriv blot til Ordikis@proton.me, så tilføjer vi dig på listen.
+      Alle medlemmer og nysgerrige kan modtage vores nyhedsbrev. Skriv blot til <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a>, så tilføjer vi dig på listen.
     </div>
   </section>
 
@@ -624,13 +577,8 @@
 
   <section id="rammer">
     <h2>Rammerne</h2>
-    <div class="two-col">
-      <div class="info-card"><strong>Påklædning</strong>Det er tilladt og opmuntret at klæde sig vovet, frækt, kinky eller normativt. 100% nøgenhed er ikke tilladt.</div>
-      <div class="info-card"><strong>Ikke en sexklub</strong>Det er et erotik-arrangement og ikke et "sex-arrangement". Ikke en swingerklub eller BDSM-klub — heller ingen skjult vibrator &#128521;</div>
-      <div class="info-card"><strong>Mobiler &amp; foto</strong>Fotografering er ikke tilladt. Mobiler afleveres i en lukket beholder indtil afslutningen.</div>
-      <div class="info-card"><strong>Smag &amp; kinks</strong>Træk dig, hvis noget er for voldsomt — vi har høretelefoner. Overlagte provokationer og overdrevne dufte er ikke velkomne.</div>
-    </div>
-    <p style="margin-top:16px;font-size:0.88rem;">Klager over andre medlemmer sendes til Ordikis@proton.me eller forpersonen.</p>
+    <div class="two-col"><div class="info-card"><strong>Påklædning</strong>Det er tilladt og opmuntret at klæde sig vovet, frækt, kinky eller normativt. 100% nøgenhed er ikke tilladt.</div><div class="info-card"><strong>Ikke en sexklub</strong>Det er et erotik-arrangement og ikke et "sex-arrangement". Ikke en swingerklub eller BDSM-klub — heller ingen skjult vibrator &#128521;</div><div class="info-card"><strong>Mobiler &amp; foto</strong>Fotografering er ikke tilladt. Mobiler afleveres i en lukket beholder indtil afslutningen.</div><div class="info-card"><strong>Smag &amp; kinks</strong>Træk dig, hvis noget er for voldsomt — vi har høretelefoner. Overlagte provokationer og overdrevne dufte er ikke velkomne.</div></div>
+    <p style="margin-top:16px;font-size:0.88rem;">Klager over andre medlemmer sendes til <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> eller forpersonen.</p>
   </section>
 
   <div class="rule"><div class="rule-diamond"></div></div>
@@ -644,64 +592,1092 @@
 
   <section id="faq">
     <h2>FAQ</h2>
-
-    <div class="faq-item">
-      <div class="faq-q">Kan vi / jeg komme en enkelt aften?</div>
-      <p class="faq-a">Ja — ved temaaftener er der et vist antal billetter til gæster udefra, som skal inviteres af et medlem. Skriv til os og hør nærmere. Øvrige aftener er forbeholdt medlemmer.</p>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">Tilbyder I foredrag?</div>
-      <p class="faq-a">Både og. Ønsker du et foredrag om erotisk litteratur til Højskolen, firmaet, festen eller polterabend — skriv til os, vi sender dig flere informationer.</p>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">Er der rabatter for studerende eller andre?</div>
-      <p class="faq-a">Nej — der gives ikke separate rabatter.</p>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">Må man bruge mikrofon, mobiltelefon eller kamera til oplæsninger?</div>
-      <p class="faq-a">Nej. Mobiltelefoner og andre kameraaktiverede elektroniske enheder er forbudt og opbevares hos værten.</p>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">Hvad er reglerne for mad og drikke?</div>
-      <p class="faq-a">Med undtagelse af vand i plastflaske er det ikke tilladt at medbringe egen mad eller drikke.</p>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-q">Hvordan modtager jeg nyhedsbrevet?</div>
-      <p class="faq-a">Skriv til Ordikis@proton.me — både nysgerrige og medlemmer er velkomne på listen.</p>
-    </div>
+    <div class="faq-item"><div class="faq-q">Kan vi / jeg komme en enkelt aften?</div><p class="faq-a">Ja — ved temaaftener er der et vist antal billetter til gæster udefra, som skal inviteres af et medlem. Skriv til os og hør nærmere. Øvrige aftener er forbeholdt medlemmer.</p></div><div class="faq-item"><div class="faq-q">Tilbyder I foredrag?</div><p class="faq-a">Både og. Ønsker du et foredrag om erotisk litteratur til Højskolen, firmaet, festen eller polterabend — skriv til os, vi sender dig flere informationer.</p></div><div class="faq-item"><div class="faq-q">Er der rabatter for studerende eller andre?</div><p class="faq-a">Nej — der gives ikke separate rabatter.</p></div><div class="faq-item"><div class="faq-q">Må man bruge mikrofon, mobiltelefon eller kamera til oplæsninger?</div><p class="faq-a">Nej. Mobiltelefoner og andre kameraaktiverede elektroniske enheder er forbudt og opbevares hos værten.</p></div><div class="faq-item"><div class="faq-q">Hvad er reglerne for mad og drikke?</div><p class="faq-a">Med undtagelse af vand i plastflaske er det ikke tilladt at medbringe egen mad eller drikke.</p></div><div class="faq-item"><div class="faq-q">Hvordan modtager jeg nyhedsbrevet?</div><p class="faq-a">Skriv til <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — både nysgerrige og medlemmer er velkomne på listen.</p></div>
   </section>
 
   <div class="closing">Ses vi? <em>Ja</em> — hvis du nyder ordet:<br><span style="font-size:1.05rem;color:var(--ink-soft);">de talte, de hviskede, de sukkede og de dejligt pirrede.</span></div>
-
   <p style="text-align:center;margin-top:36px;font-size:0.75rem;color:var(--pink-deep);letter-spacing:0.05em;">Lavet af rigtige mennesker med hjælp fra Claude AI.</p>
 
 </div>
 </div>
 
-
-<!-- ════════════════════════════════════════
-     OTHER LANGUAGES — placeholder
-════════════════════════════════════════ -->
 <div id="lang-en" class="lang-section">
-  <div class="page" style="text-align:center;padding-top:100px;">
+<div class="page">
+  <header>
     <div class="wordmark">ORDIKIS</div>
-    <p style="margin-top:24px;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink-soft);">English version coming soon.<br>Write to us at Ordikis@proton.me</p>
-  </div>
+    <div class="tagline">Private kinky erotic literature club</div>
+    <div class="sub-tagline">Savour erotic words</div>
+    <nav><a href="#om">About us</a><a href="#formaal">Purpose</a><a href="#vision">Vision</a><a href="#typisk-aften">A typical evening</a><a href="#praktisk">Who &amp; where</a><a href="#medlemskab">Membership</a><a href="#rammer">The framework</a><a href="#faq">FAQ</a></nav>
+  </header>
+
+  <section id="om">
+    <p>We are a mixed group of people who explore and enjoy the written word, readings, and the craft of erotic texts. A sanctuary of eroticism, humour, and openness — LGBT+-inclusive, body-positive, and free from racism or ageism.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="formaal">
+    <h2>The Purpose of ORDIKIS</h2>
+    <ul class="purpose-list"><li>To meet approximately 5–7 times a year to listen to or read aloud passages of erotic literature in Danish or English.</li><li>To give everyone the opportunity to read aloud — or to tease the listening senses.</li><li>To practise reading aloud and savour daring words in your mouth.</li><li>To enjoy words through personal reading.</li><li>To find inspiration in new genres, authors, and insights into sexuality, lifestyle, and seduction.</li><li>To improve your own writing and practise dirty talk.</li><li>For everyone — to the best of their ability — to contribute to a good, fun, playful and warm atmosphere.</li><li>All members are participants — there are no spectators.</li></ul>
+  </section>
+
+  <section>
+    <h2>Special Themes</h2>
+    <p>There may be themed evenings with, for example, costumes, blindfolds, kinks, and sensory experiences such as scents, food, drinks, drawing, photos, or sounds. The more senses, the better.</p>
+    <p>At themed evenings, a certain number of tickets are available for outside guests — they must be invited by a member.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="vision">
+    <h2>Vision</h2>
+    <div class="ambitions"><div class="ambition"><div class="ambition-num">1</div><div class="ambition-text">We want to awaken the desire for daring words and sensuous language.</div></div><div class="ambition"><div class="ambition-num">2</div><div class="ambition-text">We want to create a safe space for erotic play with literature.</div></div><div class="ambition"><div class="ambition-num">3</div><div class="ambition-text">We want to inspire more people to dare to write and enjoy erotic literature.</div></div><div class="ambition"><div class="ambition-num">4</div><div class="ambition-text">We want you to develop sexually and become aware of your boundaries, desires, and your yes, no or <em style="color:var(--pink-accent)">"maybe later"</em>.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="typisk-aften">
+    <h2>What does a typical evening look like?</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot">☕</div>
+        <div class="tl-content">
+          <div class="tl-time">7:00 PM — Arrival &amp; mingling</div>
+          <div class="tl-text">We meet, have a cup of tea, a beer or something else nice — settle in and chat with each other. People often make an effort with their outfit; some are daring, others dressed festively to lift the mood.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">First reading — approx. 15 to 25 min.</div>
+          <div class="tl-text">One or more members read aloud — either from their own text or something they enjoy and wish to share. Language comes alive and fills the room.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🌿</div>
+        <div class="tl-content">
+          <div class="tl-time">Short break</div>
+          <div class="tl-text">Stretch your legs, grab a drink, catch your breath.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">Second reading — approx. 20 to 35 min.</div>
+          <div class="tl-text">Another reading — perhaps a longer one. Shorter contributions may also appear — poems that are funny, serious, kinky, or simply totally cheeky and titillating.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💬</div>
+        <div class="tl-content">
+          <div class="tl-time">A slightly longer pause</div>
+          <div class="tl-text">We chat with each other — you can hear what people are up to, share thoughts on what was read and enjoy the company.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">✨</div>
+        <div class="tl-content">
+          <div class="tl-time">Final round of readings</div>
+          <div class="tl-text">Two or three more readings. The evening's mood is now well set, and the words have found their way under the skin.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🥂</div>
+        <div class="tl-content">
+          <div class="tl-time">Closing on a happy note</div>
+          <div class="tl-text">Announcements and practical info. We end in good spirits. Some head home — but others stay 20–30 minutes longer to enjoy the last of the company.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💌</div>
+        <div class="tl-content">
+          <div class="tl-time">Note: Feedback</div>
+          <div class="tl-text">If you would like feedback on texts or the reading itself, this is possible by email after the event. Be kind and positive — and honest if you wish.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="praktisk">
+    <h2>Who, how, what &amp; where</h2>
+    <div class="wh-grid"><div class="wh-item"><div class="wh-label">Who comes?</div><div class="wh-text">Those who are curious and believe they will feel at ease — and read something.</div></div><div class="wh-item"><div class="wh-label">How do I join?</div><div class="wh-text">You come dressed in whatever makes you feel confident or a little daring.</div></div><div class="wh-item"><div class="wh-label">What can I expect?</div><div class="wh-text">We start at 7:00 PM. During the 1.5 to 2.5 hours we are together, there is reading aloud, time to talk, and a chance to enjoy a snack and/or a beer, wine, or bubbles. You help create curiosity and shape the evening.</div></div><div class="wh-item"><div class="wh-label">Where is it?</div><div class="wh-text">We meet close to Danshøj station — approximately 10 minutes on foot, Copenhagen / Valby. The address is shared upon membership.</div></div><div class="wh-item"><div class="wh-label">How often and how many?</div><div class="wh-text">Approximately 5–7 times a year — or more, if the interest is there. We have a minimum of 6 and a maximum of 14 participants per evening. There are approximately 30 members in the group, so it is first come, first served for individual events.</div></div><div class="wh-item"><div class="wh-label">Questions?</div><div class="wh-text">Write to us at <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — we are happy to respond.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="medlemskab">
+    <h2>Membership</h2>
+    <div class="membership-box">
+      <div class="price-big">50 DKK</div>
+      <div class="price-label">Annual membership — 2026</div>
+      <div class="entree">Entry per evening: 85 DKK</div>
+      <div class="contact-link">We have a waiting list — write to: <a href="mailto:Ordikis@proton.me" style="text-decoration:none;">Ordikis@proton.me</a><br>
+        <span style="font-size:0.82rem;font-style:normal;font-family:'Libre Baskerville',serif;color:var(--ink-soft);letter-spacing:0;">— please share your motivation for joining and your experience with sex-positive events</span>
+      </div>
+    </div>
+    <p style="margin-top:18px;font-size:0.88rem;">This is a confidential and intimate space. Participation requires that you accept the vision and the rules, and sign to confirm that you have read and understood them — you will then receive your membership card. You must be over 21 years of age and speak English or Danish. Your real name must be provided, but does not necessarily need to be used.</p>
+    <p style="font-size:0.88rem;">Membership ends if the club host determines that the framework is not being respected and that warnings are not being taken seriously.</p>
+    <div class="newsletter-box" style="margin-top:20px;">
+      <strong>📬 Newsletter</strong>
+      All members and curious minds can receive our newsletter. Simply write to <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> and we will add you to the list.
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="rammer">
+    <h2>The Framework</h2>
+    <div class="two-col"><div class="info-card"><strong>Dress code</strong>You are welcome and encouraged to dress daringly, naughtily, kinkily, or normatively. 100% nudity is not permitted.</div><div class="info-card"><strong>Not a sex club</strong>This is an erotic event, not a "sex event". Not a swinger club or BDSM club — and no hidden vibrators either &#128521;</div><div class="info-card"><strong>Phones &amp; photos</strong>Photography is not permitted. Mobile phones are stored in a sealed container until the end of the evening.</div><div class="info-card"><strong>Tastes &amp; kinks</strong>Step back if something is too intense — we have headphones available. Deliberate provocations and overpowering scents are not welcome.</div></div>
+    <p style="margin-top:16px;font-size:0.88rem;">Complaints about other members should be sent to <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> or directed to the host.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section>
+    <h2>Who is behind ORDIKIS?</h2>
+    <p>We are a group of approximately 5 people with different backgrounds and educations. Librarian <em style="color:var(--pink-accent)">Nikolaj Petersen</em> is currently selecting texts and hosting part of the programme.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item"><div class="faq-q">Can we / I come for a single evening?</div><p class="faq-a">Yes — at themed evenings, a certain number of tickets are available for outside guests who must be invited by a member. Write to us for more details. Other evenings are reserved for members.</p></div><div class="faq-item"><div class="faq-q">Do you offer talks or lectures?</div><p class="faq-a">Yes and no. If you would like a talk about erotic literature for a folk high school, company, party, or hen/stag do — write to us and we will send you more information.</p></div><div class="faq-item"><div class="faq-q">Are there discounts for students or others?</div><p class="faq-a">No — we do not offer separate discounts.</p></div><div class="faq-item"><div class="faq-q">Can I use a microphone, mobile phone, or camera for readings?</div><p class="faq-a">No. Mobile phones and other camera-enabled electronic devices are forbidden and must be stored with the host.</p></div><div class="faq-item"><div class="faq-q">What are the rules regarding food and drink?</div><p class="faq-a">With the exception of water in a plastic bottle, bringing your own food or drink is not permitted.</p></div><div class="faq-item"><div class="faq-q">How do I receive the newsletter?</div><p class="faq-a">Write to <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — both curious minds and members are welcome on the list.</p></div>
+  </section>
+
+  <div class="closing">Shall we meet? <em>Yes</em> — if you savour the word:<br><span style="font-size:1.05rem;color:var(--ink-soft);">they spoke, they whispered, they sighed and they delightfully teased.</span></div>
+  <p style="text-align:center;margin-top:36px;font-size:0.75rem;color:var(--pink-deep);letter-spacing:0.05em;">Made by real people with help from Claude AI.</p>
+
+</div>
 </div>
 
 <div id="lang-fr" class="lang-section">
-  <div class="page" style="text-align:center;padding-top:100px;">
+<div class="page">
+  <header>
     <div class="wordmark">ORDIKIS</div>
-    <p style="margin-top:24px;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink-soft);">Version française bientôt disponible.<br>Écrivez-nous à Ordikis@proton.me</p>
-  </div>
+    <div class="tagline">Club privé de littérature érotique</div>
+    <div class="sub-tagline">Savourez les mots érotiques</div>
+    <nav><a href="#om">À propos</a><a href="#formaal">Objectif</a><a href="#vision">Vision</a><a href="#typisk-aften">Une soirée type</a><a href="#praktisk">Qui &amp; où</a><a href="#medlemskab">Adhésion</a><a href="#rammer">Le cadre</a><a href="#faq">FAQ</a></nav>
+  </header>
+
+  <section id="om">
+    <p>Nous sommes un groupe de personnes qui explorons et apprécions le mot écrit, les lectures et le travail sur les textes érotiques. Un havre d'érotisme, d'humour et d'ouverture d'esprit — inclusif LGBT+, positif envers les corps et sans racisme ni âgisme.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="formaal">
+    <h2>L'objectif d'ORDIKIS</h2>
+    <ul class="purpose-list"><li>Se réunir environ 5 à 7 fois par an pour écouter ou lire à voix haute des passages de littérature érotique en danois ou en anglais.</li><li>Donner à chacun l'occasion de lire à voix haute — ou de titiller l'ouïe.</li><li>S'exercer à la lecture à haute voix et savourer les mots osés dans sa bouche.</li><li>Apprécier les mots à travers la lecture personnelle.</li><li>Trouver l'inspiration dans de nouveaux genres, auteurs et connaissances sur la sexualité, le mode de vie et la séduction.</li><li>Améliorer ses propres textes et s'exercer au dirty talk.</li><li>Que chacun — selon ses capacités — contribue à une atmosphère bonne, amusante, ludique et chaleureuse.</li><li>Tous les membres sont participants — il n'y a pas de spectateurs.</li></ul>
+  </section>
+
+  <section>
+    <h2>Thèmes spéciaux</h2>
+    <p>Il peut y avoir des soirées thématiques avec, par exemple, des déguisements, des bandeaux, des kinks et des expériences sensorielles comme des parfums, de la nourriture, des boissons, du dessin, des photos ou des sons. Plus il y a de sens, mieux c'est.</p>
+    <p>Lors des soirées thématiques, un certain nombre de billets sont disponibles pour des invités extérieurs — ils doivent être invités par un membre.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="vision">
+    <h2>Vision</h2>
+    <div class="ambitions"><div class="ambition"><div class="ambition-num">1</div><div class="ambition-text">Nous voulons éveiller le désir pour le mot osé et le langage sensuel.</div></div><div class="ambition"><div class="ambition-num">2</div><div class="ambition-text">Nous voulons créer un espace sûr pour le jeu érotique avec la littérature.</div></div><div class="ambition"><div class="ambition-num">3</div><div class="ambition-text">Nous voulons inspirer davantage de personnes à oser écrire et apprécier la littérature érotique.</div></div><div class="ambition"><div class="ambition-num">4</div><div class="ambition-text">Nous voulons que vous puissiez vous développer sexuellement et prendre conscience de vos limites, désirs et de votre oui, non ou <em style="color:var(--pink-accent)">"peut-être plus tard"</em>.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="typisk-aften">
+    <h2>À quoi ressemble une soirée type ?</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot">☕</div>
+        <div class="tl-content">
+          <div class="tl-time">19h00 — Arrivée &amp; convivialité</div>
+          <div class="tl-text">Nous nous retrouvons, prenons une tasse de thé, une bière ou autre chose — et nous installons en bavardant. Les gens font souvent un effort vestimentaire ; certains sont audacieux, d'autres habillés gaiement pour égayer l'ambiance.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">Première lecture — env. 15 à 25 min.</div>
+          <div class="tl-text">Un ou plusieurs membres lisent à voix haute — soit leur propre texte, soit quelque chose qu'ils apprécient et souhaitent partager. La langue prend vie et remplit la pièce.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🌿</div>
+        <div class="tl-content">
+          <div class="tl-time">Courte pause</div>
+          <div class="tl-text">Étirer les jambes, se chercher un verre, reprendre son souffle.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">Deuxième lecture — env. 20 à 35 min.</div>
+          <div class="tl-text">Une autre lecture — peut-être plus longue. Des contributions plus courtes peuvent aussi apparaître — des poèmes drôles, sérieux, kinky ou tout simplement coquins et piquants.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💬</div>
+        <div class="tl-content">
+          <div class="tl-time">Pause un peu plus longue</div>
+          <div class="tl-text">Nous bavardons entre nous — on peut entendre ce que les gens font dans leur vie, partager des réflexions sur ce qui a été lu et profiter de la compagnie.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">✨</div>
+        <div class="tl-content">
+          <div class="tl-time">Dernière série de lectures</div>
+          <div class="tl-text">Deux ou trois lectures supplémentaires. L'atmosphère de la soirée est bien installée, et les mots ont trouvé leur chemin sous la peau.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🥂</div>
+        <div class="tl-content">
+          <div class="tl-time">Clôture sur une happy note</div>
+          <div class="tl-text">Annonces et informations pratiques. Nous terminons dans la bonne humeur. Certains rentrent — mais d'autres restent 20 à 30 minutes supplémentaires pour profiter du dernier moment ensemble.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💌</div>
+        <div class="tl-content">
+          <div class="tl-time">Note : Retours</div>
+          <div class="tl-text">Si vous souhaitez des retours sur vos textes ou sur la lecture elle-même, c'est possible par e-mail après l'événement. Soyez aimable et positif — et honnête si vous le souhaitez.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="praktisk">
+    <h2>Qui, comment, quoi &amp; où</h2>
+    <div class="wh-grid"><div class="wh-item"><div class="wh-label">Qui vient ?</div><div class="wh-text">Ceux qui sont curieux et pensent qu'ils se sentiront à l'aise — et liront quelque chose.</div></div><div class="wh-item"><div class="wh-label">Comment participer ?</div><div class="wh-text">Vous venez habillé de ce qui vous fait vous sentir confiant ou un peu audacieux.</div></div><div class="wh-item"><div class="wh-label">À quoi s'attendre ?</div><div class="wh-text">Nous commençons à 19h00. Pendant les 1h30 à 2h30 ensemble, il y a des lectures, du temps pour discuter et profiter d'un en-cas et/ou d'une bière, d'un vin ou de bulles. Vous participez à créer la curiosité et à façonner la soirée.</div></div><div class="wh-item"><div class="wh-label">Où est-ce ?</div><div class="wh-text">Nous nous retrouvons près de la station Danshøj — environ 10 minutes à pied, Copenhague / Valby. L'adresse est communiquée lors de l'adhésion.</div></div><div class="wh-item"><div class="wh-label">À quelle fréquence et combien ?</div><div class="wh-text">Environ 5 à 7 fois par an — ou plus, si l'intérêt est là. Nous sommes entre 6 et 14 participants par soirée. Il y a environ 30 membres dans le groupe, donc premier arrivé, premier servi pour les événements.</div></div><div class="wh-item"><div class="wh-label">Des questions ?</div><div class="wh-text">Écrivez-nous à <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — nous répondrons volontiers.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="medlemskab">
+    <h2>Adhésion</h2>
+    <div class="membership-box">
+      <div class="price-big">50 DKK</div>
+      <div class="price-label">Adhésion annuelle — 2026</div>
+      <div class="entree">Entrée par soirée : 85 DKK</div>
+      <div class="contact-link">Nous avons une liste d'attente — écrivez à : <a href="mailto:Ordikis@proton.me" style="text-decoration:none;">Ordikis@proton.me</a><br>
+        <span style="font-size:0.82rem;font-style:normal;font-family:'Libre Baskerville',serif;color:var(--ink-soft);letter-spacing:0;">— partagez votre motivation pour participer et votre expérience des événements sex-positifs</span>
+      </div>
+    </div>
+    <p style="margin-top:18px;font-size:0.88rem;">C'est un espace confidentiel et intime. La participation exige que vous acceptiez la vision et les règles, et que vous signiez pour confirmer que vous les avez lues et comprises — vous recevrez ensuite votre carte de membre. Vous devez avoir plus de 21 ans et parler anglais ou danois. Votre vrai nom doit être fourni, mais ne doit pas nécessairement être utilisé.</p>
+    <p style="font-size:0.88rem;">L'adhésion prend fin si l'hôte du club estime que le cadre n'est pas respecté et que les avertissements ne sont pas pris au sérieux.</p>
+    <div class="newsletter-box" style="margin-top:20px;">
+      <strong>📬 Newsletter</strong>
+      Tous les membres et les curieux peuvent recevoir notre newsletter. Écrivez simplement à <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> et nous vous ajouterons à la liste.
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="rammer">
+    <h2>Le cadre</h2>
+    <div class="two-col"><div class="info-card"><strong>Tenue vestimentaire</strong>Vous êtes bienvenu et encouragé à vous habiller de manière audacieuse, coquine, kinky ou normative. La nudité à 100% n'est pas autorisée.</div><div class="info-card"><strong>Pas un club sexuel</strong>C'est un événement érotique, pas un "événement sexuel". Pas un club échangiste ou BDSM — et pas de vibromasseur caché non plus &#128521;</div><div class="info-card"><strong>Téléphones &amp; photos</strong>La photographie n'est pas autorisée. Les téléphones portables sont stockés dans un contenant fermé jusqu'à la fin de la soirée.</div><div class="info-card"><strong>Goûts &amp; kinks</strong>Prenez du recul si quelque chose est trop intense — nous avons des écouteurs disponibles. Les provocations délibérées et les parfums envahissants ne sont pas les bienvenus.</div></div>
+    <p style="margin-top:16px;font-size:0.88rem;">Les plaintes concernant d'autres membres doivent être envoyées à <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> ou adressées à l'hôte.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section>
+    <h2>Qui est derrière ORDIKIS ?</h2>
+    <p>Nous sommes un groupe d'environ 5 personnes avec des parcours et des formations différents. Le bibliothécaire <em style="color:var(--pink-accent)">Nikolaj Petersen</em> choisit actuellement les textes et anime une partie du programme.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item"><div class="faq-q">Peut-on venir pour une seule soirée ?</div><p class="faq-a">Oui — lors des soirées thématiques, un certain nombre de billets sont disponibles pour des invités extérieurs qui doivent être invités par un membre. Écrivez-nous pour plus de détails. Les autres soirées sont réservées aux membres.</p></div><div class="faq-item"><div class="faq-q">Proposez-vous des conférences ?</div><p class="faq-a">Oui et non. Si vous souhaitez une conférence sur la littérature érotique pour une école, une entreprise, une fête ou un enterrement de vie — écrivez-nous et nous vous enverrons plus d'informations.</p></div><div class="faq-item"><div class="faq-q">Y a-t-il des réductions pour les étudiants ou autres ?</div><p class="faq-a">Non — nous n'offrons pas de réductions séparées.</p></div><div class="faq-item"><div class="faq-q">Peut-on utiliser un microphone, téléphone ou caméra pour les lectures ?</div><p class="faq-a">Non. Les téléphones portables et autres appareils électroniques avec caméra sont interdits et doivent être déposés chez l'hôte.</p></div><div class="faq-item"><div class="faq-q">Quelles sont les règles concernant la nourriture et les boissons ?</div><p class="faq-a">À l'exception de l'eau en bouteille plastique, il n'est pas permis d'apporter sa propre nourriture ou boisson.</p></div><div class="faq-item"><div class="faq-q">Comment recevoir la newsletter ?</div><p class="faq-a">Écrivez à <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — curieux et membres sont les bienvenus sur la liste.</p></div>
+  </section>
+
+  <div class="closing">Nous verrons-nous ? <em>Oui</em> — si vous savourez le mot :<br><span style="font-size:1.05rem;color:var(--ink-soft);">ils parlèrent, ils chuchotèrent, ils soupirèrent et ils titillèrent délicieusement.</span></div>
+  <p style="text-align:center;margin-top:36px;font-size:0.75rem;color:var(--pink-deep);letter-spacing:0.05em;">Créé par de vraies personnes avec l'aide de Claude AI.</p>
+
+</div>
 </div>
 
 <div id="lang-es" class="lang-section">
-  <div class="page" style="text-align:center;padding-top:100px;">
+<div class="page">
+  <header>
     <div class="wordmark">ORDIKIS</div>
-    <p style="margin-top:24px;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink-soft);">Ver
+    <div class="tagline">Club privado de literatura erótica</div>
+    <div class="sub-tagline">Saborea las palabras eróticas</div>
+    <nav><a href="#om">Sobre nosotros</a><a href="#formaal">Propósito</a><a href="#vision">Visión</a><a href="#typisk-aften">Una velada típica</a><a href="#praktisk">Quién &amp; dónde</a><a href="#medlemskab">Membresía</a><a href="#rammer">Las normas</a><a href="#faq">FAQ</a></nav>
+  </header>
+
+  <section id="om">
+    <p>Somos un grupo heterogéneo de personas que exploramos y disfrutamos la palabra escrita, las lecturas y el trabajo con textos eróticos. Un refugio de erotismo, humor y apertura — inclusivo LGBT+, positivo con los cuerpos y libre de racismo o edadismo.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="formaal">
+    <h2>El propósito de ORDIKIS</h2>
+    <ul class="purpose-list"><li>Reunirse aproximadamente 5 a 7 veces al año para escuchar o leer en voz alta pasajes de literatura erótica en danés o inglés.</li><li>Dar a todos la oportunidad de leer en voz alta — o de despertar los sentidos auditivos.</li><li>Practicar la lectura en voz alta y saborear palabras atrevidas en la boca.</li><li>Disfrutar las palabras a través de la lectura personal.</li><li>Encontrar inspiración en nuevos géneros, autores y conocimientos sobre sexualidad, estilo de vida y seducción.</li><li>Mejorar los propios textos y practicar el dirty talk.</li><li>Que todos — en la medida de sus posibilidades — contribuyan a un ambiente bueno, divertido, juguetón y cálido.</li><li>Todos los miembros son participantes — no hay espectadores.</li></ul>
+  </section>
+
+  <section>
+    <h2>Temas especiales</h2>
+    <p>Puede haber veladas temáticas con, por ejemplo, disfraces, vendas para los ojos, kinks y experiencias sensoriales como aromas, comida, bebidas, dibujo, fotos o sonidos. Cuantos más sentidos, mejor.</p>
+    <p>En las veladas temáticas, hay un número determinado de entradas para invitados externos — deben ser invitados por un miembro.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="vision">
+    <h2>Visión</h2>
+    <div class="ambitions"><div class="ambition"><div class="ambition-num">1</div><div class="ambition-text">Queremos despertar el deseo por la palabra atrevida y el lenguaje sensual.</div></div><div class="ambition"><div class="ambition-num">2</div><div class="ambition-text">Queremos crear un espacio seguro para el juego erótico con la literatura.</div></div><div class="ambition"><div class="ambition-num">3</div><div class="ambition-text">Queremos inspirar a más personas a atreverse a escribir y disfrutar la literatura erótica.</div></div><div class="ambition"><div class="ambition-num">4</div><div class="ambition-text">Queremos que puedas desarrollarte sexualmente y tomar conciencia de tus límites, deseos y tu sí, no o <em style="color:var(--pink-accent)">"quizás más tarde"</em>.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="typisk-aften">
+    <h2>¿Cómo es una velada típica?</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot">☕</div>
+        <div class="tl-content">
+          <div class="tl-time">19:00 h — Llegada &amp; ambiente</div>
+          <div class="tl-text">Nos reunimos, tomamos un té, una cerveza u otra cosa agradable — nos acomodamos y charlamos entre nosotros. La gente suele esforzarse con su atuendo; algunos son atrevidos, otros van festivamente vestidos para elevar el ánimo.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">Primera lectura — aprox. 15 a 25 min.</div>
+          <div class="tl-text">Uno o varios miembros leen en voz alta — ya sea su propio texto o algo que les gusta y desean compartir. El lenguaje cobra vida y llena la sala.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🌿</div>
+        <div class="tl-content">
+          <div class="tl-time">Breve pausa</div>
+          <div class="tl-text">Estirar las piernas, buscar una bebida, tomar aliento.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">Segunda lectura — aprox. 20 a 35 min.</div>
+          <div class="tl-text">Otra lectura — quizás más larga. También pueden aparecer contribuciones más cortas — poemas divertidos, serios, kinky o simplemente totalmente pícaros y estimulantes.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💬</div>
+        <div class="tl-content">
+          <div class="tl-time">Una pausa algo más larga</div>
+          <div class="tl-text">Charlamos entre nosotros — se puede escuchar qué hace la gente, compartir pensamientos sobre lo leído y disfrutar de la compañía.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">✨</div>
+        <div class="tl-content">
+          <div class="tl-time">Ronda final de lecturas</div>
+          <div class="tl-text">Dos o tres lecturas más. El ambiente de la velada ya está bien establecido y las palabras han encontrado su camino bajo la piel.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🥂</div>
+        <div class="tl-content">
+          <div class="tl-time">Cierre en clave positiva</div>
+          <div class="tl-text">Anuncios e información práctica. Terminamos con buen ánimo. Algunos se van — pero otros se quedan 20-30 minutos más para disfrutar del último rato juntos.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💌</div>
+        <div class="tl-content">
+          <div class="tl-time">Nota: Retroalimentación</div>
+          <div class="tl-text">Si deseas comentarios sobre textos o sobre la lectura en sí, es posible hacerlo por correo electrónico después del evento. Sé amable y positivo — y honesto si lo deseas.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="praktisk">
+    <h2>Quién, cómo, qué &amp; dónde</h2>
+    <div class="wh-grid"><div class="wh-item"><div class="wh-label">¿Quién viene?</div><div class="wh-text">Quienes tienen interés y creen que se sentirán cómodos — y leerán algo.</div></div><div class="wh-item"><div class="wh-label">¿Cómo participo?</div><div class="wh-text">Vienes vestido con lo que te haga sentir seguro o un poco atrevido.</div></div><div class="wh-item"><div class="wh-label">¿Qué puedo esperar?</div><div class="wh-text">Empezamos a las 19:00 h. Durante las 1,5 a 2,5 horas que estamos juntos, hay lecturas en voz alta, tiempo para charlar y disfrutar de un aperitivo y/o una cerveza, vino o burbujas. Ayudas a crear curiosidad y a dar forma a la velada.</div></div><div class="wh-item"><div class="wh-label">¿Dónde es?</div><div class="wh-text">Nos reunimos cerca de la estación Danshøj — aproximadamente 10 minutos a pie, Copenhague / Valby. La dirección se comparte al hacerse miembro.</div></div><div class="wh-item"><div class="wh-label">¿Con qué frecuencia y cuántos?</div><div class="wh-text">Aproximadamente 5 a 7 veces al año — o más, si hay interés. Somos entre 6 y 14 participantes por velada. Hay aproximadamente 30 miembros en el grupo, así que las plazas son por orden de llegada.</div></div><div class="wh-item"><div class="wh-label">¿Preguntas?</div><div class="wh-text">Escríbenos a <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — con gusto respondemos.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="medlemskab">
+    <h2>Membresía</h2>
+    <div class="membership-box">
+      <div class="price-big">50 DKK</div>
+      <div class="price-label">Membresía anual — 2026</div>
+      <div class="entree">Entrada por velada: 85 DKK</div>
+      <div class="contact-link">Tenemos lista de espera — escribe a: <a href="mailto:Ordikis@proton.me" style="text-decoration:none;">Ordikis@proton.me</a><br>
+        <span style="font-size:0.82rem;font-style:normal;font-family:'Libre Baskerville',serif;color:var(--ink-soft);letter-spacing:0;">— comparte tu motivación para unirte y tu experiencia con eventos sex-positivos</span>
+      </div>
+    </div>
+    <p style="margin-top:18px;font-size:0.88rem;">Es un espacio confidencial e íntimo. La participación requiere que aceptes la visión y las normas, y firmes confirmando que las has leído y comprendido — luego recibirás tu tarjeta de miembro. Debes tener más de 21 años y hablar inglés o danés. Se debe proporcionar el nombre real, pero no necesariamente usarse.</p>
+    <p style="font-size:0.88rem;">La membresía finaliza si el anfitrión del club determina que no se respetan las normas y que las advertencias no se toman en serio.</p>
+    <div class="newsletter-box" style="margin-top:20px;">
+      <strong>📬 Boletín</strong>
+      Todos los miembros y curiosos pueden recibir nuestro boletín. Simplemente escribe a <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> y te añadiremos a la lista.
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="rammer">
+    <h2>Las normas</h2>
+    <div class="two-col"><div class="info-card"><strong>Código de vestimenta</strong>Eres bienvenido y animado a vestirte de forma atrevida, traviesa, kinky o normativa. La desnudez al 100% no está permitida.</div><div class="info-card"><strong>No es un club sexual</strong>Es un evento erótico, no un "evento sexual". No es un club de intercambio de parejas ni BDSM — y tampoco se permiten vibradores ocultos &#128521;</div><div class="info-card"><strong>Teléfonos &amp; fotos</strong>No se permite la fotografía. Los teléfonos móviles se guardan en un recipiente sellado hasta el final de la velada.</div><div class="info-card"><strong>Gustos &amp; kinks</strong>Retrocede si algo es demasiado intenso — tenemos auriculares disponibles. Las provocaciones deliberadas y los aromas dominantes no son bienvenidos.</div></div>
+    <p style="margin-top:16px;font-size:0.88rem;">Las quejas sobre otros miembros deben enviarse a <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> o dirigirse al anfitrión.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section>
+    <h2>¿Quién está detrás de ORDIKIS?</h2>
+    <p>Somos un grupo de aproximadamente 5 personas con diferentes orígenes y formaciones. El bibliotecario <em style="color:var(--pink-accent)">Nikolaj Petersen</em> está actualmente seleccionando textos y presentando parte del programa.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item"><div class="faq-q">¿Podemos / puedo venir una sola velada?</div><p class="faq-a">Sí — en las veladas temáticas hay un número determinado de entradas para invitados externos que deben ser invitados por un miembro. Escríbenos para más detalles. Las demás veladas están reservadas para miembros.</p></div><div class="faq-item"><div class="faq-q">¿Ofrecéis charlas o conferencias?</div><p class="faq-a">Sí y no. Si deseas una charla sobre literatura erótica para una escuela, empresa, fiesta o despedida de soltero/a — escríbenos y te enviaremos más información.</p></div><div class="faq-item"><div class="faq-q">¿Hay descuentos para estudiantes u otros?</div><p class="faq-a">No — no ofrecemos descuentos separados.</p></div><div class="faq-item"><div class="faq-q">¿Se puede usar micrófono, móvil o cámara para las lecturas?</div><p class="faq-a">No. Los teléfonos móviles y otros dispositivos electrónicos con cámara están prohibidos y deben guardarse con el anfitrión.</p></div><div class="faq-item"><div class="faq-q">¿Cuáles son las normas sobre comida y bebida?</div><p class="faq-a">A excepción del agua en botella de plástico, no está permitido traer comida o bebida propia.</p></div><div class="faq-item"><div class="faq-q">¿Cómo recibo el boletín?</div><p class="faq-a">Escribe a <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — tanto curiosos como miembros son bienvenidos en la lista.</p></div>
+  </section>
+
+  <div class="closing">¿Nos vemos? <em>Sí</em> — si saboreas la palabra:<br><span style="font-size:1.05rem;color:var(--ink-soft);">hablaron, susurraron, suspiraron y deliciosamente provocaron.</span></div>
+  <p style="text-align:center;margin-top:36px;font-size:0.75rem;color:var(--pink-deep);letter-spacing:0.05em;">Creado por personas reales con ayuda de Claude AI.</p>
+
+</div>
+</div>
+
+<div id="lang-de" class="lang-section">
+<div class="page">
+  <header>
+    <div class="wordmark">ORDIKIS</div>
+    <div class="tagline">Privater erotischer Literaturclub</div>
+    <div class="sub-tagline">Genießt erotische Worte</div>
+    <nav><a href="#om">Über uns</a><a href="#formaal">Ziel</a><a href="#vision">Vision</a><a href="#typisk-aften">Ein typischer Abend</a><a href="#praktisk">Wer &amp; wo</a><a href="#medlemskab">Mitgliedschaft</a><a href="#rammer">Der Rahmen</a><a href="#faq">FAQ</a></nav>
+  </header>
+
+  <section id="om">
+    <p>Wir sind eine gemischte Gruppe von Menschen, die das geschriebene Wort, Lesungen und die Arbeit mit erotischen Texten erkunden und genießen. Ein Refugium für Erotik, Humor und Offenheit — LGBT+-inklusiv, körperpositiv und frei von Rassismus oder Altersfeindlichkeit.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="formaal">
+    <h2>Das Ziel von ORDIKIS</h2>
+    <ul class="purpose-list"><li>Etwa 5 bis 7 Mal im Jahr zusammenzukommen, um Passagen erotischer Literatur auf Dänisch oder Englisch zu hören oder vorzulesen.</li><li>Allen die Möglichkeit zu geben, laut zu lesen — oder den Hörsinn zu kitzeln.</li><li>Das laute Vorlesen zu üben und gewagt Worte im Mund zu spüren.</li><li>Worte durch persönliches Lesen zu genießen.</li><li>Inspiration in neuen Genres, Autoren und Einblicken in Sexualität, Lebensstil und Verführung zu finden.</li><li>Die eigenen Texte zu verbessern und Dirty Talk zu üben.</li><li>Dass alle — nach bestem Vermögen — zu einer guten, lustigen, verspielten und warmen Atmosphäre beitragen.</li><li>Alle Mitglieder sind Teilnehmer — es gibt keine Zuschauer.</li></ul>
+  </section>
+
+  <section>
+    <h2>Besondere Themen</h2>
+    <p>Es kann Themenabende geben mit zum Beispiel Verkleidungen, Augenbinden, Kinks und sensorischen Erfahrungen wie Düfte, Essen, Getränke, Zeichnen, Fotos oder Klänge. Je mehr Sinne, desto besser.</p>
+    <p>Bei Themenabenden steht eine begrenzte Anzahl von Tickets für externe Gäste zur Verfügung — sie müssen von einem Mitglied eingeladen werden.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="vision">
+    <h2>Vision</h2>
+    <div class="ambitions"><div class="ambition"><div class="ambition-num">1</div><div class="ambition-text">Wir wollen die Lust auf das gewagt Wort und die sinnliche Sprache wecken.</div></div><div class="ambition"><div class="ambition-num">2</div><div class="ambition-text">Wir wollen einen sicheren Raum für erotisches Spiel mit der Literatur schaffen.</div></div><div class="ambition"><div class="ambition-num">3</div><div class="ambition-text">Wir wollen mehr Menschen inspirieren, sich zu trauen, erotische Literatur zu schreiben und zu genießen.</div></div><div class="ambition"><div class="ambition-num">4</div><div class="ambition-text">Wir wollen, dass du dich sexuell entwickeln und dir deiner Grenzen, Lüste und deines Ja, Nein oder <em style="color:var(--pink-accent)">"vielleicht später"</em> bewusst werden kannst.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="typisk-aften">
+    <h2>Wie sieht ein typischer Abend aus?</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot">☕</div>
+        <div class="tl-content">
+          <div class="tl-time">19:00 Uhr — Ankunft &amp; Gemütlichkeit</div>
+          <div class="tl-text">Wir treffen uns, trinken eine Tasse Tee, ein Bier oder etwas anderes Schönes — und plaudern miteinander. Die Leute machen oft etwas aus ihrem Outfit; manche sind gewagt, andere festlich gekleidet, um die Stimmung zu heben.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">Erste Lesung — ca. 15 bis 25 Min.</div>
+          <div class="tl-text">Ein oder mehrere Mitglieder lesen vor — entweder eigene Texte oder etwas, das sie schätzen und teilen möchten. Die Sprache lebt und füllt den Raum.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🌿</div>
+        <div class="tl-content">
+          <div class="tl-time">Kurze Pause</div>
+          <div class="tl-text">Beine strecken, ein Getränk holen, durchatmen.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">Zweite Lesung — ca. 20 bis 35 Min.</div>
+          <div class="tl-text">Eine weitere Lesung — vielleicht eine längere. Auch kürzere Beiträge können vorkommen — Gedichte, die lustig, ernst, kinky oder einfach total frech und aufregend sind.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💬</div>
+        <div class="tl-content">
+          <div class="tl-time">Eine etwas längere Pause</div>
+          <div class="tl-text">Wir plaudern miteinander — man erfährt, was die Menschen so machen, teilt Gedanken über das Gelesene und genießt die Gesellschaft.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">✨</div>
+        <div class="tl-content">
+          <div class="tl-time">Letzte Leserunde</div>
+          <div class="tl-text">Zwei oder drei weitere Lesungen. Die Stimmung des Abends ist nun gut gesetzt, und die Worte haben sich unter die Haut geschlichen.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🥂</div>
+        <div class="tl-content">
+          <div class="tl-time">Abschluss auf einer Happy Note</div>
+          <div class="tl-text">Mitteilungen und praktische Infos. Wir enden in guter Stimmung. Manche müssen nach Hause — aber andere bleiben 20–30 Minuten länger und genießen die letzten gemeinsamen Momente.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💌</div>
+        <div class="tl-content">
+          <div class="tl-time">Hinweis: Feedback</div>
+          <div class="tl-text">Wenn man Feedback zu Texten oder zur Lesung selbst möchte, ist dies per E-Mail nach der Veranstaltung möglich. Sei freundlich und positiv — und ehrlich, wenn du magst.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="praktisk">
+    <h2>Wer, wie, was &amp; wo</h2>
+    <div class="wh-grid"><div class="wh-item"><div class="wh-label">Wer kommt?</div><div class="wh-text">Diejenigen, die Interesse haben und glauben, dass sie sich wohlfühlen werden — und etwas lesen möchten.</div></div><div class="wh-item"><div class="wh-label">Wie nehme ich teil?</div><div class="wh-text">Du kommst gekleidet in das, was dich selbstsicher oder ein bisschen gewagt fühlen lässt.</div></div><div class="wh-item"><div class="wh-label">Was kann ich erwarten?</div><div class="wh-text">Wir beginnen um 19:00 Uhr. Während der 1,5 bis 2,5 Stunden gibt es Vorlesen, Zeit zum Reden und die Möglichkeit, einen Snack und/oder ein Bier, Wein oder Sekt zu genießen. Du hilfst dabei, Neugier zu wecken und den Abend zu gestalten.</div></div><div class="wh-item"><div class="wh-label">Wo ist es?</div><div class="wh-text">Wir treffen uns in der Nähe der Station Danshøj — etwa 10 Minuten zu Fuß, Kopenhagen / Valby. Die Adresse wird bei der Mitgliedschaft mitgeteilt.</div></div><div class="wh-item"><div class="wh-label">Wie oft und wie viele?</div><div class="wh-text">Etwa 5 bis 7 Mal im Jahr — oder öfter, wenn das Interesse da ist. Wir haben mindestens 6 und maximal 14 Teilnehmer pro Abend. Es gibt etwa 30 Mitglieder in der Gruppe, daher gilt für einzelne Veranstaltungen: Wer zuerst kommt, mahlt zuerst.</div></div><div class="wh-item"><div class="wh-label">Fragen?</div><div class="wh-text">Schreib uns an <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — wir antworten gerne.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="medlemskab">
+    <h2>Mitgliedschaft</h2>
+    <div class="membership-box">
+      <div class="price-big">50 DKK</div>
+      <div class="price-label">Jahresmitgliedschaft — 2026</div>
+      <div class="entree">Eintritt pro Abend: 85 DKK</div>
+      <div class="contact-link">Wir haben eine Warteliste — schreib an: <a href="mailto:Ordikis@proton.me" style="text-decoration:none;">Ordikis@proton.me</a><br>
+        <span style="font-size:0.82rem;font-style:normal;font-family:'Libre Baskerville',serif;color:var(--ink-soft);letter-spacing:0;">— teile gerne deine Motivation zur Teilnahme und deine Erfahrung mit sex-positiven Veranstaltungen mit</span>
+      </div>
+    </div>
+    <p style="margin-top:18px;font-size:0.88rem;">Dies ist ein vertraulicher und intimer Raum. Die Teilnahme erfordert, dass du die Vision und die Regeln akzeptierst und unterschreibst, dass du sie gelesen und verstanden hast — danach erhältst du deine Mitgliedskarte. Du musst über 21 Jahre alt sein und Englisch oder Dänisch sprechen. Dein richtiger Name muss angegeben werden, muss aber nicht unbedingt verwendet werden.</p>
+    <p style="font-size:0.88rem;">Die Mitgliedschaft endet, wenn der Club-Gastgeber feststellt, dass der Rahmen nicht eingehalten wird und Warnungen nicht ernst genommen werden.</p>
+    <div class="newsletter-box" style="margin-top:20px;">
+      <strong>📬 Newsletter</strong>
+      Alle Mitglieder und Neugierige können unseren Newsletter erhalten. Schreib einfach an <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> und wir fügen dich der Liste hinzu.
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="rammer">
+    <h2>Der Rahmen</h2>
+    <div class="two-col"><div class="info-card"><strong>Kleidung</strong>Du bist herzlich willkommen und ermutigt, gewagt, frech, kinky oder normativ gekleidet zu erscheinen. 100% Nacktheit ist nicht gestattet.</div><div class="info-card"><strong>Kein Sex-Club</strong>Dies ist eine erotische Veranstaltung, kein "Sex-Event". Kein Swinger-Club oder BDSM-Club — und auch keine versteckten Vibratoren &#128521;</div><div class="info-card"><strong>Handys &amp; Fotos</strong>Fotografieren ist nicht gestattet. Mobiltelefone werden bis zum Ende des Abends in einem verschlossenen Behälter aufbewahrt.</div><div class="info-card"><strong>Geschmäcker &amp; Kinks</strong>Tritt zurück, wenn etwas zu intensiv ist — wir haben Kopfhörer verfügbar. Bewusste Provokationen und überwältigende Düfte sind nicht willkommen.</div></div>
+    <p style="margin-top:16px;font-size:0.88rem;">Beschwerden über andere Mitglieder sollten an <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> gesendet oder an den Gastgeber gerichtet werden.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section>
+    <h2>Wer steckt hinter ORDIKIS?</h2>
+    <p>Wir sind eine Gruppe von etwa 5 Personen mit unterschiedlichen Hintergründen und Ausbildungen. Bibliothekar <em style="color:var(--pink-accent)">Nikolaj Petersen</em> wählt derzeit Texte aus und moderiert einen Teil des Programms.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item"><div class="faq-q">Können wir / ich einen einzelnen Abend besuchen?</div><p class="faq-a">Ja — bei Themenabenden steht eine begrenzte Anzahl von Tickets für externe Gäste zur Verfügung, die von einem Mitglied eingeladen werden müssen. Schreib uns für Details. Andere Abende sind Mitgliedern vorbehalten.</p></div><div class="faq-item"><div class="faq-q">Bietet ihr Vorträge an?</div><p class="faq-a">Ja und nein. Wenn du einen Vortrag über erotische Literatur für eine Volkshochschule, ein Unternehmen, eine Party oder einen Junggesellen-/Junggesellinnenabschied möchtest — schreib uns und wir senden dir weitere Informationen.</p></div><div class="faq-item"><div class="faq-q">Gibt es Rabatte für Studierende oder andere?</div><p class="faq-a">Nein — wir bieten keine separaten Rabatte an.</p></div><div class="faq-item"><div class="faq-q">Darf man ein Mikrofon, Handy oder eine Kamera für Lesungen verwenden?</div><p class="faq-a">Nein. Mobiltelefone und andere kamerafähige elektronische Geräte sind verboten und müssen beim Gastgeber aufbewahrt werden.</p></div><div class="faq-item"><div class="faq-q">Welche Regeln gelten für Essen und Trinken?</div><p class="faq-a">Mit Ausnahme von Wasser in einer Plastikflasche ist es nicht gestattet, eigenes Essen oder Trinken mitzubringen.</p></div><div class="faq-item"><div class="faq-q">Wie erhalte ich den Newsletter?</div><p class="faq-a">Schreib an <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — Neugierige und Mitglieder sind gleichermaßen willkommen auf der Liste.</p></div>
+  </section>
+
+  <div class="closing">Sehen wir uns? <em>Ja</em> — wenn du das Wort genießt:<br><span style="font-size:1.05rem;color:var(--ink-soft);">sie sprachen, sie flüsterten, sie seufzten und sie kitzelten köstlich.</span></div>
+  <p style="text-align:center;margin-top:36px;font-size:0.75rem;color:var(--pink-deep);letter-spacing:0.05em;">Erstellt von echten Menschen mit Hilfe von Claude AI.</p>
+
+</div>
+</div>
+
+<div id="lang-sv" class="lang-section">
+<div class="page">
+  <header>
+    <div class="wordmark">ORDIKIS</div>
+    <div class="tagline">Privat kinky erotisk litteraturklubb</div>
+    <div class="sub-tagline">Njut av erotiska ord</div>
+    <nav><a href="#om">Om oss</a><a href="#formaal">Syfte</a><a href="#vision">Vision</a><a href="#typisk-aften">En typisk kväll</a><a href="#praktisk">Vem &amp; var</a><a href="#medlemskab">Medlemskap</a><a href="#rammer">Ramarna</a><a href="#faq">FAQ</a></nav>
+  </header>
+
+  <section id="om">
+    <p>Vi är en blandad grupp människor som utforskar och njuter av det skrivna ordet, uppläsningar och arbetet med erotiska texter. En fristad för erotik, humor och öppenhet — LGBT+-inkluderande, kroppspositiv och fri från rasism eller åldersdiskriminering.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="formaal">
+    <h2>Syftet med ORDIKIS</h2>
+    <ul class="purpose-list"><li>Att träffas ungefär 5–7 gånger per år och lyssna på eller läsa upp avsnitt ur erotisk litteratur på danska eller engelska.</li><li>Att ge alla möjlighet att läsa högt — eller att kittla lyssnarsinnet.</li><li>Att öva på högläsning och ha de vågade orden i munnen.</li><li>Att njuta av orden genom personlig högläsning.</li><li>Att hitta inspiration i nya genrer, författare och kunskap om sexualitet, livsstil och förförelse.</li><li>Att förbättra sina egna texter och öva dirty talk.</li><li>Att alla — efter förmåga — bidrar till en god, rolig, lekfull och varm stämning.</li><li>Alla medlemmar är deltagare — det finns inga åskådare.</li></ul>
+  </section>
+
+  <section>
+    <h2>Temakväll</h2>
+    <p>Det kan finnas temakvällar med till exempel utklädnad, ögonbindlar, kinks och sinnesupplevelser som dofter, mat, dryck, teckning, foton eller ljud. Ju fler sinnen, desto bättre.</p>
+    <p>Vid temakvällar finns ett visst antal biljetter för utomstående gäster — de måste bjudas in av en medlem.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="vision">
+    <h2>Vision</h2>
+    <div class="ambitions"><div class="ambition"><div class="ambition-num">1</div><div class="ambition-text">Vi vill väcka lusten till det vågade ordet och det sensuella språket.</div></div><div class="ambition"><div class="ambition-num">2</div><div class="ambition-text">Vi vill skapa en trygg ram för erotisk lek med litteraturen.</div></div><div class="ambition"><div class="ambition-num">3</div><div class="ambition-text">Vi vill inspirera fler att våga skriva och njuta av erotisk litteratur.</div></div><div class="ambition"><div class="ambition-num">4</div><div class="ambition-text">Vi vill att du ska kunna utvecklas sexuellt och bli medveten om gränser, lustar och ditt ja, nej eller <em style="color:var(--pink-accent)">"kanske senare"</em>.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="typisk-aften">
+    <h2>Hur ser en typisk kväll ut?</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot">☕</div>
+        <div class="tl-content">
+          <div class="tl-time">Kl. 19:00 — Ankomst &amp; mingel</div>
+          <div class="tl-text">Vi träffas, tar en kopp te, en öl eller något annat gott — slår oss ner och pratar med varandra. Folk gör ofta lite extra med sin klädsel; vissa är vågade, andra festligt klädda för att höja stämningen.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">Första uppläsning — ca. 15 till 25 min.</div>
+          <div class="tl-text">En eller flera medlemmar läser upp — antingen ur en egen text eller något de tycker är bra och vill dela. Språket lever och fyller rummet.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🌿</div>
+        <div class="tl-content">
+          <div class="tl-time">Kort paus</div>
+          <div class="tl-text">Sträck på benen, hämta en dryck, ta ett andetag.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">Andra uppläsning — ca. 20 till 35 min.</div>
+          <div class="tl-text">Ytterligare en uppläsning — kanske en längre. Kortare bidrag kan också förekomma — dikter som är roliga, allvarliga, kinky eller bara helt fräcka och pirrande.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💬</div>
+        <div class="tl-content">
+          <div class="tl-time">Lite längre paus</div>
+          <div class="tl-text">Vi pratar med varandra — man kan höra vad folk sysslar med, dela tankar om det lästa och njuta av sällskapet.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">✨</div>
+        <div class="tl-content">
+          <div class="tl-time">Sista rundan av uppläsningar</div>
+          <div class="tl-text">Två eller tre uppläsningar till. Kvällens stämning är nu väl satt och orden har hittat vägen under skinnet.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🥂</div>
+        <div class="tl-content">
+          <div class="tl-time">Avslutning på en happy note</div>
+          <div class="tl-text">Meddelanden och praktisk info. Vi avslutar i god stämning. Några behöver gå hem — men andra stannar 20–30 minuter extra och njuter av det sista sällskapet.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💌</div>
+        <div class="tl-content">
+          <div class="tl-time">Obs: Feedback</div>
+          <div class="tl-text">Vill man ha feedback på texter eller själva uppläsningen är det möjligt via e-post efter evenemanget. Var vänlig och positiv — och gärna ärlig.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="praktisk">
+    <h2>Vem, hur, vad &amp; var</h2>
+    <div class="wh-grid"><div class="wh-item"><div class="wh-label">Vem kommer?</div><div class="wh-text">De som har intresse och tror att de kommer att trivas — och läsa något.</div></div><div class="wh-item"><div class="wh-label">Hur deltar jag?</div><div class="wh-text">Du kommer i kläder som du känner dig självsäker eller lite vågad i.</div></div><div class="wh-item"><div class="wh-label">Vad kan jag förvänta mig?</div><div class="wh-text">Vi börjar kl. 19:00. Under de 1,5 till 2,5 timmar vi ses finns det uppläsning och tid att prata med varandra och njuta av ett tilltugg och/eller en öl, vin eller bubblor. Du är med och skapar nyfikenhet och formar kvällen.</div></div><div class="wh-item"><div class="wh-label">Var är det?</div><div class="wh-text">Vi träffas nära Danshøj station — ungefär 10 minuters promenad därifrån, Köpenhamn / Valby. Adressen ges vid medlemskap.</div></div><div class="wh-item"><div class="wh-label">Hur ofta och hur många?</div><div class="wh-text">Ungefär 5–7 gånger per år — eller mer om intresset finns. Vi är minst 6 och max 14 deltagare per kväll. Det finns ca 30 medlemmar i gruppen, så det gäller att vara snabb för de enskilda evenemangen.</div></div><div class="wh-item"><div class="wh-label">Frågor?</div><div class="wh-text">Skriv till oss på <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — vi svarar gärna.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="medlemskab">
+    <h2>Medlemskap</h2>
+    <div class="membership-box">
+      <div class="price-big">50 DKK</div>
+      <div class="price-label">Årsmedlemskap — 2026</div>
+      <div class="entree">Entré per kväll: 85 DKK</div>
+      <div class="contact-link">Vi har väntelista — skriv till: <a href="mailto:Ordikis@proton.me" style="text-decoration:none;">Ordikis@proton.me</a><br>
+        <span style="font-size:0.82rem;font-style:normal;font-family:'Libre Baskerville',serif;color:var(--ink-soft);letter-spacing:0;">— berätta gärna om din motivation att delta och din erfarenhet av sex-positiva evenemang</span>
+      </div>
+    </div>
+    <p style="margin-top:18px;font-size:0.88rem;">Det är ett konfidentiellt och intimt rum. Deltagande kräver att du accepterar visionen och reglerna och skriver under på att du har läst och förstått dem — därefter får du ditt medlemskort. Man måste vara över 21 år och tala engelska eller danska. Riktigt namn måste anges men behöver inte nödvändigtvis användas.</p>
+    <p style="font-size:0.88rem;">Medlemskapet upphör om ordföranden bedömer att ramarna inte respekteras och att varningar inte tas på allvar.</p>
+    <div class="newsletter-box" style="margin-top:20px;">
+      <strong>📬 Nyhetsbrev</strong>
+      Alla medlemmar och nyfikna kan ta emot vårt nyhetsbrev. Skriv bara till <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> så lägger vi till dig på listan.
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="rammer">
+    <h2>Ramarna</h2>
+    <div class="two-col"><div class="info-card"><strong>Klädsel</strong>Det är tillåtet och uppmuntrat att klä sig vågat, fräckt, kinky eller normativt. 100% nakenhet är inte tillåtet.</div><div class="info-card"><strong>Inte en sexklubb</strong>Det är ett erotiskt evenemang och inte ett "sex-evenemang". Inte en swingerklubb eller BDSM-klubb — heller ingen dold vibrator &#128521;</div><div class="info-card"><strong>Mobiler &amp; foto</strong>Fotografering är inte tillåtet. Mobiltelefoner lämnas in i en sluten behållare tills kvällen är slut.</div><div class="info-card"><strong>Smak &amp; kinks</strong>Dra dig undan om något är för intensivt — vi har hörlurar. Avsiktliga provokationer och överväldigande dofter är inte välkomna.</div></div>
+    <p style="margin-top:16px;font-size:0.88rem;">Klagomål om andra medlemmar skickas till <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> eller till ordföranden.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section>
+    <h2>Vem står bakom?</h2>
+    <p>Vi är en grupp på ca 5 personer med olika bakgrund och utbildning. Bibliotekarien <em style="color:var(--pink-accent)">Nikolaj Petersen</em> väljer texter för tillfället och är värd för en del av programmet.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item"><div class="faq-q">Kan vi / jag komma en enstaka kväll?</div><p class="faq-a">Ja — vid temakvällar finns ett visst antal biljetter för utomstående gäster som måste bjudas in av en medlem. Skriv till oss för mer information. Övriga kvällar är förbehållna medlemmar.</p></div><div class="faq-item"><div class="faq-q">Erbjuder ni föreläsningar?</div><p class="faq-a">Både och. Önskar du en föreläsning om erotisk litteratur till folkhögskolan, företaget, festen eller möhippan — skriv till oss, vi skickar mer information.</p></div><div class="faq-item"><div class="faq-q">Finns det rabatter för studenter eller andra?</div><p class="faq-a">Nej — vi ger inga separata rabatter.</p></div><div class="faq-item"><div class="faq-q">Får man använda mikrofon, mobiltelefon eller kamera vid uppläsningar?</div><p class="faq-a">Nej. Mobiltelefoner och andra kameraaktiverade elektroniska enheter är förbjudna och förvaras hos värden.</p></div><div class="faq-item"><div class="faq-q">Vad gäller för mat och dryck?</div><p class="faq-a">Med undantag av vatten i plastflaska är det inte tillåtet att ta med egen mat eller dryck.</p></div><div class="faq-item"><div class="faq-q">Hur prenumererar jag på nyhetsbrevet?</div><p class="faq-a">Skriv till <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — både nyfikna och medlemmar är välkomna på listan.</p></div>
+  </section>
+
+  <div class="closing">Ses vi? <em>Ja</em> — om du njuter av ordet:<br><span style="font-size:1.05rem;color:var(--ink-soft);">de talade, de viskade, de suckade och de ljuvligt retade.</span></div>
+  <p style="text-align:center;margin-top:36px;font-size:0.75rem;color:var(--pink-deep);letter-spacing:0.05em;">Skapad av riktiga människor med hjälp av Claude AI.</p>
+
+</div>
+</div>
+
+<div id="lang-no" class="lang-section">
+<div class="page">
+  <header>
+    <div class="wordmark">ORDIKIS</div>
+    <div class="tagline">Privat kinky erotisk litteraturklubb</div>
+    <div class="sub-tagline">Nyt erotiske ord</div>
+    <nav><a href="#om">Om oss</a><a href="#formaal">Formål</a><a href="#vision">Visjon</a><a href="#typisk-aften">En typisk kveld</a><a href="#praktisk">Hvem &amp; hvor</a><a href="#medlemskab">Medlemskap</a><a href="#rammer">Rammene</a><a href="#faq">FAQ</a></nav>
+  </header>
+
+  <section id="om">
+    <p>Vi er en blandet gruppe mennesker som utforsker og nyter det skrevne ord, opplesninger og arbeidet med erotiske tekster. Et fristed for erotikk, humor og åpenhet — LGBT+-inkluderende, kroppspositiv og uten rasisme eller aldersdiskriminering.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="formaal">
+    <h2>Formålet med ORDIKIS</h2>
+    <ul class="purpose-list"><li>Å møtes ca. 5–7 ganger per år og lytte til eller lese opp avsnitt av erotisk litteratur på dansk eller engelsk.</li><li>At alle får mulighet til å lese høyt — eller pirre lyttesansen.</li><li>Å øve på høytlesning og ha de friske ordene i munnen.</li><li>Å nyte ordene gjennom personlig høytlesning.</li><li>Å finne inspirasjon i nye sjangre, forfattere og kunnskap om seksualitet, livsstil og forførelse.</li><li>Å forbedre egne tekster og øve dirty talk.</li><li>At alle — etter evne — bidrar til en god, morsom, leken og varm stemning.</li><li>Alle medlemmer er deltakere — det er ingen tilskuere.</li></ul>
+  </section>
+
+  <section>
+    <h2>Temakveld</h2>
+    <p>Det kan være temakveldene med for eksempel utkleding, bind for øynene, kinks og sanseopplevelser som dufter, mat, drikke, tegning, bilder eller lyder. Jo flere sanser, jo bedre.</p>
+    <p>På temakveldene er det et visst antall billetter for gjester utenfra — disse må inviteres av et medlem.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="vision">
+    <h2>Visjon</h2>
+    <div class="ambitions"><div class="ambition"><div class="ambition-num">1</div><div class="ambition-text">Vi vil vekke lysten til det friske ordet og det sanselige språket.</div></div><div class="ambition"><div class="ambition-num">2</div><div class="ambition-text">Vi vil skape trygge rammer for erotisk lek med litteraturen.</div></div><div class="ambition"><div class="ambition-num">3</div><div class="ambition-text">Vi vil inspirere flere til å tørre å skrive og nyte erotisk litteratur.</div></div><div class="ambition"><div class="ambition-num">4</div><div class="ambition-text">Vi vil at du skal kunne utvikle deg seksuelt og bli bevisst på grenser, lyster og ditt ja, nei eller <em style="color:var(--pink-accent)">"kanskje senere"</em>.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="typisk-aften">
+    <h2>Hvordan ser en typisk kveld ut?</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot">☕</div>
+        <div class="tl-content">
+          <div class="tl-time">Kl. 19:00 — Ankomst &amp; hyggelig prat</div>
+          <div class="tl-text">Vi møtes, tar en kopp te, en øl eller noe annet godt — slår oss ned og prater med hverandre. Folk gjør ofte litt ut av antrekket sitt; noen er vågale, andre festlig kledd for å løfte stemningen.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">Første opplesning — ca. 15 til 25 min.</div>
+          <div class="tl-text">Et eller flere av medlemmene leser opp — enten fra en egen tekst eller noe de synes er bra og vil dele. Språket lever og fyller rommet.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🌿</div>
+        <div class="tl-content">
+          <div class="tl-time">Kort pause</div>
+          <div class="tl-text">Strekk på bena, hent en drink, trekk pusten.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">Andre opplesning — ca. 20 til 35 min.</div>
+          <div class="tl-text">En ny opplesning — kanskje en lang. Det kan også komme kortere bidrag — dikt som er morsomme, alvorlige, kinky eller bare totalt friske og pirrende.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💬</div>
+        <div class="tl-content">
+          <div class="tl-time">Litt lengre pause</div>
+          <div class="tl-text">Vi snakker med hverandre — man kan høre hva folk holder på med, dele tanker om det som ble lest og nyte selskapet.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">✨</div>
+        <div class="tl-content">
+          <div class="tl-time">Siste runde med opplesninger</div>
+          <div class="tl-text">To-tre opplesninger til. Kveldsstemmingen er nå godt satt, og ordene har funnet veien under huden.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🥂</div>
+        <div class="tl-content">
+          <div class="tl-time">Avslutning på en happy note</div>
+          <div class="tl-text">Meldinger og praktisk info. Vi avslutter i god stemning. Noen må hjem — men andre blir 20–30 minutter ekstra og nyter det siste selskapet.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💌</div>
+        <div class="tl-content">
+          <div class="tl-time">Obs: Tilbakemelding</div>
+          <div class="tl-text">Ønsker man tilbakemelding på tekster eller selve opplesningen, er det mulig via e-post etter arrangementet. Vær vennlig og positiv — og gjerne ærlig.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="praktisk">
+    <h2>Hvem, hvordan, hva &amp; hvor</h2>
+    <div class="wh-grid"><div class="wh-item"><div class="wh-label">Hvem kommer?</div><div class="wh-text">De som har interesse og tror de vil trives — og lese noe.</div></div><div class="wh-item"><div class="wh-label">Hvordan deltar jeg?</div><div class="wh-text">Du kommer i klær du føler deg selvsikker eller litt vågal i.</div></div><div class="wh-item"><div class="wh-label">Hva kan jeg forvente?</div><div class="wh-text">Vi starter kl. 19:00. I løpet av de 1,5 til 2,5 timene vi er samlet, er det opplesning og tid til å prate med hverandre og nyte en snack og/eller en øl, vin eller bobler. Du er med på å skape nysgjerrighet og forme kvelden.</div></div><div class="wh-item"><div class="wh-label">Hvor er det?</div><div class="wh-text">Vi møtes nær Danshøj st. — ca. 10 minutters gange derfra, København / Valby. Adressen oppgis ved medlemskap.</div></div><div class="wh-item"><div class="wh-label">Hvor ofte og hvor mange?</div><div class="wh-text">Ca. 5–7 ganger i året — eller mer om interessen er der. Vi er minimum 6 og maksimalt 14 deltakere per kveld. Det er ca. 30 medlemmer i gruppen, så først til mølla gjelder for de enkelte arrangementene.</div></div><div class="wh-item"><div class="wh-label">Spørsmål?</div><div class="wh-text">Skriv til oss på <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — vi svarer gjerne.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="medlemskab">
+    <h2>Medlemskap</h2>
+    <div class="membership-box">
+      <div class="price-big">50 DKK</div>
+      <div class="price-label">Årsmedlemskap — 2026</div>
+      <div class="entree">Entré per kveld: 85 DKK</div>
+      <div class="contact-link">Vi har venteliste — skriv til: <a href="mailto:Ordikis@proton.me" style="text-decoration:none;">Ordikis@proton.me</a><br>
+        <span style="font-size:0.82rem;font-style:normal;font-family:'Libre Baskerville',serif;color:var(--ink-soft);letter-spacing:0;">— oppgi gjerne din motivasjon for å delta og din erfaring med sexpositiv arrangementer</span>
+      </div>
+    </div>
+    <p style="margin-top:18px;font-size:0.88rem;">Det er et fortrolig og intimt rom. Deltakelse krever at du aksepterer visjonen og reglene og skriver under på at du har lest og forstått dem — deretter mottar du ditt medlemskort. Man må være over 21 år og snakke engelsk eller dansk. Riktig navn må oppgis, men ikke nødvendigvis brukes.</p>
+    <p style="font-size:0.88rem;">Medlemskapet opphører dersom lederen anser at rammene ikke overholdes og at advarsler ikke tas seriøst.</p>
+    <div class="newsletter-box" style="margin-top:20px;">
+      <strong>📬 Nyhetsbrev</strong>
+      Alle medlemmer og nysgjerrige kan motta vårt nyhetsbrev. Skriv bare til <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> så legger vi deg til på listen.
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="rammer">
+    <h2>Rammene</h2>
+    <div class="two-col"><div class="info-card"><strong>Påkledning</strong>Det er tillatt og oppmuntret å kle seg vågalt, frekt, kinky eller normativt. 100% nakenhet er ikke tillatt.</div><div class="info-card"><strong>Ikke en sexklubb</strong>Det er et erotikkarrangement og ikke et "sex-arrangement". Ikke en swingerklubb eller BDSM-klubb — heller ingen skjult vibrator &#128521;</div><div class="info-card"><strong>Mobiler &amp; foto</strong>Fotografering er ikke tillatt. Mobiler leveres inn i en lukket beholder til slutt.</div><div class="info-card"><strong>Smak &amp; kinks</strong>Trekk deg tilbake om noe er for intenst — vi har hodetelefoner. Overlagte provokasjoner og overdrevne dufter er ikke velkomne.</div></div>
+    <p style="margin-top:16px;font-size:0.88rem;">Klager på andre medlemmer sendes til <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> eller til lederen.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section>
+    <h2>Hvem står bak?</h2>
+    <p>Vi er en gruppe på ca. 5 personer med ulik bakgrunn og utdanning. Bibliotekar <em style="color:var(--pink-accent)">Nikolaj Petersen</em> velger tekster for øyeblikket og er vert for en del av programmet.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item"><div class="faq-q">Kan vi / jeg komme en enkelt kveld?</div><p class="faq-a">Ja — på temakveldene er det et visst antall billetter for gjester utenfra, som må inviteres av et medlem. Skriv til oss for mer informasjon. Øvrige kvelder er forbeholdt medlemmer.</p></div><div class="faq-item"><div class="faq-q">Tilbyr dere foredrag?</div><p class="faq-a">Både og. Ønsker du et foredrag om erotisk litteratur til folkehøyskolen, firmaet, festen eller polterabend — skriv til oss, vi sender deg mer informasjon.</p></div><div class="faq-item"><div class="faq-q">Er det rabatter for studenter eller andre?</div><p class="faq-a">Nei — det gis ikke separate rabatter.</p></div><div class="faq-item"><div class="faq-q">Kan man bruke mikrofon, mobiltelefon eller kamera til opplesninger?</div><p class="faq-a">Nei. Mobiltelefoner og andre kameraaktiverte elektroniske enheter er forbudt og oppbevares hos verten.</p></div><div class="faq-item"><div class="faq-q">Hva er reglene for mat og drikke?</div><p class="faq-a">Med unntak av vann i plastflaske er det ikke tillatt å ta med egen mat eller drikke.</p></div><div class="faq-item"><div class="faq-q">Hvordan mottar jeg nyhetsbrevet?</div><p class="faq-a">Skriv til <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — både nysgjerrige og medlemmer er velkomne på listen.</p></div>
+  </section>
+
+  <div class="closing">Sees vi? <em>Ja</em> — om du nyter ordet:<br><span style="font-size:1.05rem;color:var(--ink-soft);">de snakket, de hvisket, de sukket og de deilig pirret.</span></div>
+  <p style="text-align:center;margin-top:36px;font-size:0.75rem;color:var(--pink-deep);letter-spacing:0.05em;">Laget av ekte mennesker med hjelp fra Claude AI.</p>
+
+</div>
+</div>
+
+<div id="lang-is" class="lang-section">
+<div class="page">
+  <header>
+    <div class="wordmark">ORDIKIS</div>
+    <div class="tagline">Einkabókmenntafélag með erotísku sniði</div>
+    <div class="sub-tagline">Njóttu erotíska orðsins</div>
+    <nav><a href="#om">Um okkur</a><a href="#formaal">Markmið</a><a href="#vision">Sýn</a><a href="#typisk-aften">Dæmigerð kvöld</a><a href="#praktisk">Hverjir &amp; hvar</a><a href="#medlemskab">Aðild</a><a href="#rammer">Ramminn</a><a href="#faq">FAQ</a></nav>
+  </header>
+
+  <section id="om">
+    <p>Við erum blandaður hópur fólks sem kannar og nýtur hins skrifaða orðs, upplestur og vinnu með erotískar textar. Griðastaður erotíkur, húmors og opins huga — LGBT+-hlutlægt, líkamsjákvætt og án kynþáttafordóma eða aldursmismunuðar.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="formaal">
+    <h2>Markmið ORDIKIS</h2>
+    <ul class="purpose-list"><li>Að hittast ca. 5–7 sinnum á ári og hlusta á eða lesa upp kafla úr erotískum bókmenntum á dönsku eða ensku.</li><li>Að allir fái tækifæri til að lesa upphátt — eða hvetja hlustunarskynjunina.</li><li>Að æfa upplestur og hafa djarfa orðin í munninum.</li><li>Að njóta orðanna í gegnum persónulegan upplestur.</li><li>Að finna innblástur í nýjum tegundum, höfundum og þekkingu um kynlíf, lífsstíl og tálsemi.</li><li>Að bæta eigin texta og æfa dirty talk.</li><li>Að allir — eftir getu — leggi af mörkum til góðs, skemmtilegrar, leiklegrar og hlýlegrar andrúmslofts.</li><li>Allir meðlimir eru þátttakendur — engir áhorfendur eru hér.</li></ul>
+  </section>
+
+  <section>
+    <h2>Þemakvöld</h2>
+    <p>Geta verið þemakvöld með t.d. búningum, sjónbindingum, kinks og skynhreyfingarupplifunum eins og lykt, mat, drykk, teikningu, myndir eða hljóð. Því fleiri skilningarvit, þeim mun betra.</p>
+    <p>Á þemakvöldum eru ákveðin mörk á gestum að utan — þeir verða að vera boðnir af meðlim.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="vision">
+    <h2>Sýn</h2>
+    <div class="ambitions"><div class="ambition"><div class="ambition-num">1</div><div class="ambition-text">Við viljum vekja löngun til hins djörva orðs og skynrænna tungumála.</div></div><div class="ambition"><div class="ambition-num">2</div><div class="ambition-text">Við viljum skapa öruggt rými fyrir erotíska leik með bókmenntir.</div></div><div class="ambition"><div class="ambition-num">3</div><div class="ambition-text">Við viljum hvetja fleiri til að þora að skrifa og njóta erotískra bókmennta.</div></div><div class="ambition"><div class="ambition-num">4</div><div class="ambition-text">Við viljum að þú getir þroskast kynferðislega og orðið meðvitaður um mörk, lystir og þitt já, nei eða <em style="color:var(--pink-accent)">"kannski seinna"</em>.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="typisk-aften">
+    <h2>Hvernig lítur dæmigert kvöld út?</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot">☕</div>
+        <div class="tl-content">
+          <div class="tl-time">Kl. 19:00 — Koma &amp; samvera</div>
+          <div class="tl-text">Við hittumst, fáum bolla af te, bjór eða eitthvað annað gott — settjum okkur og spjallum saman. Fólk gerir oft eitthvað úr búningi sínum; sumir eru djarfir, aðrir skemmtilega klæddir til að lyfta skapi.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">Fyrsti upplesturinn — ca. 15 til 25 mín.</div>
+          <div class="tl-text">Einn eða fleiri meðlimir lesa upphátt — annaðhvort úr eigin texta eða eitthvað sem þeim líður vel og vilja deila. Tungumálið lifnar við og fyllir herbergið.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🌿</div>
+        <div class="tl-content">
+          <div class="tl-time">Stutt hlé</div>
+          <div class="tl-text">Teygja á líkamanum, sækja drykk, anda.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-content">
+          <div class="tl-time">Annar upplesturinn — ca. 20 til 35 mín.</div>
+          <div class="tl-text">Annar upplestur — kannski lengri. Styttri framlög geta einnig komið — ljóð sem eru fyndin, alvarleg, kinky eða bara algerlega djörft og pirrandi.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💬</div>
+        <div class="tl-content">
+          <div class="tl-time">Aðeins lengra hlé</div>
+          <div class="tl-text">Við spjallum saman — heyrir hvernig fólk hefur það, deilir hugsunum um lesturinn og nýtur félagsins.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">✨</div>
+        <div class="tl-content">
+          <div class="tl-time">Síðasta umferð upplestura</div>
+          <div class="tl-text">Tveir eða þrír upplesturar til viðbótar. Andrúmsloft kvöldsins er nú vel komið og orðin hafa fundið leið undir húðina.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🥂</div>
+        <div class="tl-content">
+          <div class="tl-time">Lokun á gleðilegan nóta</div>
+          <div class="tl-text">Tilkynningar og praktískar upplýsingar. Við lokum í góðum anda. Sumir fara heim — en aðrir dveljast 20–30 mínútur til viðbótar og njóta síðustu stundarinnar.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">💌</div>
+        <div class="tl-content">
+          <div class="tl-time">Athugasemd: Endurgjöf</div>
+          <div class="tl-text">Ef maður vill endurgjöf á texta eða upplesturinn sjálfan er hægt að fá það í tölvupósti eftir viðburðinn. Vertu vinsamlegur og jákvæður — og gjarnan heiðarlegur.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="praktisk">
+    <h2>Hverjir, hvernig, hvað &amp; hvar</h2>
+    <div class="wh-grid"><div class="wh-item"><div class="wh-label">Hverjir koma?</div><div class="wh-text">Þeir sem hafa áhuga og trúa að þeir muni líða vel — og lesa eitthvað.</div></div><div class="wh-item"><div class="wh-label">Hvernig tek ég þátt?</div><div class="wh-text">Þú kemur í föt sem þú finnst vel í eða jafnvel svolítið djörf.</div></div><div class="wh-item"><div class="wh-label">Hvað get ég búist við?</div><div class="wh-text">Við byrjum kl. 19:00. Á þessum 1,5 til 2,5 klukkustundum er upplestur og tími til að tala saman og njóta smákosts og/eða bjórs, víns eða gosdrykks. Þú ert hluti af að skapa forvitni og móta kvöldið.</div></div><div class="wh-item"><div class="wh-label">Hvar er þetta?</div><div class="wh-text">Við hittumst nálægt Danshøj lestarstöð — um það bil 10 mínútna gangur þaðan, Kaupmannahöfn / Valby. Heimilisfangið er gefið upp við aðild.</div></div><div class="wh-item"><div class="wh-label">Hversu oft og hversu margir?</div><div class="wh-text">Um það bil 5–7 sinnum á ári — eða oftar ef áhugi er til staðar. Við erum að lágmarki 6 og að hámarki 14 þátttakendur á kvöld. Það eru um 30 meðlimir í hópnum, svo fyrst til myllu gildir.</div></div><div class="wh-item"><div class="wh-label">Spurningar?</div><div class="wh-text">Skrifaðu til okkar á <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — við svarum glaðlega.</div></div></div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="medlemskab">
+    <h2>Aðild</h2>
+    <div class="membership-box">
+      <div class="price-big">50 DKK</div>
+      <div class="price-label">Árleg aðild — 2026</div>
+      <div class="entree">Aðgangseyrir á kvöld: 85 DKK</div>
+      <div class="contact-link">Við höfum biðlista — skrifaðu til: <a href="mailto:Ordikis@proton.me" style="text-decoration:none;">Ordikis@proton.me</a><br>
+        <span style="font-size:0.82rem;font-style:normal;font-family:'Libre Baskerville',serif;color:var(--ink-soft);letter-spacing:0;">— vinsamlegast deildu hvatningu þinni til þátttöku og reynslu þinni af kynlífsáhugasamlegum viðburðum</span>
+      </div>
+    </div>
+    <p style="margin-top:18px;font-size:0.88rem;">Þetta er trúnaðar- og náið rými. Þátttaka krefst þess að þú samþykkir sýn og reglur og skrifar undir staðfestingu á að þú hafir lesið og skilið þær — síðan færð þú meðlimskortin þitt. Þú verður að vera yfir 21 árs og tala ensku eða dönsku. Rétt nafn verður að vera gefið upp en þarf ekki endilega að nota.</p>
+    <p style="font-size:0.88rem;">Aðild lýkur ef formaðurinn telur að ramminn sé ekki virtur og viðvaranir séu ekki teknar alvarlega.</p>
+    <div class="newsletter-box" style="margin-top:20px;">
+      <strong>📬 Fréttabréf</strong>
+      Allir meðlimir og forvitinn geta fengið fréttabréfið okkar. Skrifaðu bara til <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> og við setjum þig á listann.
+    </div>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="rammer">
+    <h2>Ramminn</h2>
+    <div class="two-col"><div class="info-card"><strong>Klæðnaður</strong>Þér er velkomið og hvatinn til að klæðast djarft, frekjulega, kinky eða hefðbundið. 100% nekt er ekki leyfð.</div><div class="info-card"><strong>Ekki kynlífsklubbur</strong>Þetta er erotísk viðburður, ekki "kynlífsviðburður". Ekki svingerklubbur eða BDSM-klubbur — og engar faldar titlingsár heldur &#128521;</div><div class="info-card"><strong>Símar &amp; myndir</strong>Ljósmyndun er ekki leyfð. Farsímar eru geymdir í lokuðum gámi þar til kvöldinu er lokið.</div><div class="info-card"><strong>Bragð &amp; kinks</strong>Farðu til baka ef eitthvað er of þungt — við höfum heyrnartól tiltæk. Vísvitandi ögringar og yfirþyrmandi ilmur eru ekki velkomnar.</div></div>
+    <p style="margin-top:16px;font-size:0.88rem;">Kvartanir yfir öðrum meðlimum sendist til <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> eða til formannsins.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section>
+    <h2>Hverjir standa á bak við?</h2>
+    <p>Við erum hópur um það bil 5 einstaklinga með mismunandi bakgrunn og menntun. Bókasafnsmaðurinn <em style="color:var(--pink-accent)">Nikolaj Petersen</em> velur texta eins og er og er gestgjafi hluta af dagskránni.</p>
+  </section>
+
+  <div class="rule"><div class="rule-diamond"></div></div>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item"><div class="faq-q">Getum við / ég komið eitt kvöld?</div><p class="faq-a">Já — á þemakvöldum eru ákveðið margar miðar fyrir gesti að utan sem verða að vera boðnir af meðlim. Skrifaðu til okkar til að fá frekari upplýsingar. Önnur kvöld eru fyrirvarin fyrir meðlimi.</p></div><div class="faq-item"><div class="faq-q">Bjóðið þið upp á fyrirlestra?</div><p class="faq-a">Bæði og. Vilt þú fyrirlestra um erotískar bókmenntir fyrir háskóla, fyrirtæki, veislu eða brúðkaupskvöld — skrifaðu til okkar, við sendum þér frekari upplýsingar.</p></div><div class="faq-item"><div class="faq-q">Er afsláttur fyrir nemendur eða aðra?</div><p class="faq-a">Nei — við bjóðum ekki upp á sérstakan afslátt.</p></div><div class="faq-item"><div class="faq-q">Má nota hljóðnema, farsíma eða myndavél við upplestur?</div><p class="faq-a">Nei. Farsímar og önnur rafræn tæki með myndavél eru bönnuð og verða geymd hjá gestgjafanum.</p></div><div class="faq-item"><div class="faq-q">Hverjar eru reglurnar um mat og drykk?</div><p class="faq-a">Að undanskildu vatni í plastkútu er ekki leyfilegt að taka með sér eigin mat eða drykk.</p></div><div class="faq-item"><div class="faq-q">Hvernig fæ ég fréttabréfið?</div><p class="faq-a">Skrifaðu til <a href="mailto:Ordikis@proton.me">Ordikis@proton.me</a> — bæði forvitinn og meðlimir eru velkomnir á listann.</p></div>
+  </section>
+
+  <div class="closing">Sjáumst? <em>Já</em> — ef þú nýtur orðsins:<br><span style="font-size:1.05rem;color:var(--ink-soft);">þau töluðu, þau hvísluðu, þau andvarpuðu og þau pirruðu yndislega.</span></div>
+  <p style="text-align:center;margin-top:36px;font-size:0.75rem;color:var(--pink-deep);letter-spacing:0.05em;">Búið til af raunverulegum mannfólki með hjálp frá Claude AI.</p>
+
+</div>
+</div>
+
+<script>
+  var allLangs = ['da', 'en', 'fr', 'es', 'de', 'sv', 'no', 'is'];
+  function setLang(lang) {
+    allLangs.forEach(function(l) {
+      document.getElementById('lang-' + l).classList.toggle('visible', l === lang);
+      document.getElementById('btn-' + l).classList.toggle('active', l === lang);
+    });
+    document.documentElement.lang = lang;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  // Show Danish by default
+  document.getElementById('lang-da').classList.add('visible');
+</script>
+
+</body>
+</html>
